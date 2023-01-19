@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="logo" fill="none" viewBox="0 0 26 30">
+    <path
+      fill="#58BEBF"
+      fill-rule="evenodd"
+      d="M15 15 25.599 4.385c-5.82-5.81-15.39-5.807-21.206.008-5.818 5.819-5.818 15.395 0 21.214 5.819 5.818 15.395 5.818 21.214 0L15 15Z"
+      clip-rule="evenodd"
+    />
+  </symbol>
+</svg>
