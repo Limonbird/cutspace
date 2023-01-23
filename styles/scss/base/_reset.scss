@@ -1,0 +1,27 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: 0; // @TODO: подумать как переопределить. Не нравится полностью убирать, не видно при переходах по tab.
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  // border: 0; // @TODO: стоит ли убирать?
+}
