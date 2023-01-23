@@ -8,13 +8,28 @@
     <link rel="stylesheet" href="styles/css/index.css" />
   </head>
   <body>
-    <h1>
-      <svg width="30px" height="30px">
-        <use href="assets/icons.svg#logo" />
-      </svg>
-      Cutspace
-    </h1>
-    <input type="text" />
-    <button>hello</button>
+    <header class="site-header">
+      <div class="site-header__container">
+        <div class="site-header__body">
+          <div class="site-header__logo">
+            <svg width="30px" height="30px">
+              <title>CutSpace</title>
+              <use href="./assets/icons.svg#logo" />
+            </svg>
+            <span class="site-header__title">CutSpace</span>
+          </div>
+          <nav class="site-header__nav">
+            <ul class="site-header__list">
+              <!-- @TODO: проставить якоря -->
+              <li><a href="#" class="site-header__link">Home</a></li>
+              <li><a href="#" class="site-header__link site-header__link--active">About us</a></li>
+              <li><a href="#" class="site-header__link">Find space</a></li>
+              <li><a href="#" class="site-header__link">Share space</a></li>
+              <li><a href="#" class="site-header__link">Promote space</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

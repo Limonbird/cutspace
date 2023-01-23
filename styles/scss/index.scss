@@ -1,5 +1,11 @@
 // base
-@import "base/fonts";
-@import "base/reset";
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/reset';
+
+// mixins
+// располагать над блоками
+@import './mixins';
 
 // blocks
+@import 'blocks/site-header';

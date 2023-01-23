@@ -1,0 +1,44 @@
+.site-header {
+  &__container {
+    @include container;
+  }
+
+  &__body {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 33px;
+    padding-top: 40px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 12px;
+  }
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    gap: 42px;
+  }
+
+  &__link {
+    display: block;
+
+    &:hover {
+      transform: scale(1.05);
+      // @TODO: может быть для --актив прописать таки bold ... посмотреть потом как будет выглядеть
+    }
+
+    &--active {
+      color: $orange;
+      transform: scale(1.05);
+    }
+  }
+}
