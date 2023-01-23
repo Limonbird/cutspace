@@ -1,0 +1,36 @@
+.intro {
+  &__container {
+    @include container;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 540px;
+  }
+
+  &__content {
+    padding-top: 127px;
+    padding-right: 103px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    margin-right: -170px;
+    position: relative;
+  }
+
+  &__subtitle {
+    margin-bottom: 42px;
+  }
+
+  &__picture {
+    border-radius: 40px 40px 40px 0px;
+    overflow: hidden;
+    flex: 0 0 540px;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+}

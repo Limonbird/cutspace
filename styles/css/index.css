@@ -23,6 +23,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: normal;
+  letter-spacing: 1.15px;
+  line-height: 1.69;
   margin: 0;
 }
 
@@ -33,6 +35,14 @@ h4,
 h5,
 h6 {
   font-weight: bold;
+  letter-spacing: 0.8px;
+  line-height: 1.48;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 54px;
+  line-height: 1.46;
 }
 
 input,
@@ -55,6 +65,15 @@ a:hover {
   text-decoration: none;
 }
 
+figure {
+  margin: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
 .header__container {
   margin-left: auto;
   margin-right: auto;
@@ -67,7 +86,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   padding-bottom: 33px;
-  padding-top: 40px;
+  padding-top: 37px;
+  letter-spacing: normal;
 }
 .header__logo {
   display: flex;
@@ -93,4 +113,37 @@ a:hover {
 .header__link--active {
   color: #f78434;
   transform: scale(1.05);
+}
+
+.intro__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.intro__body {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+}
+.intro__content {
+  padding-top: 127px;
+  padding-right: 103px;
+}
+.intro__title {
+  margin-bottom: 25px;
+  margin-right: -170px;
+  position: relative;
+}
+.intro__subtitle {
+  margin-bottom: 42px;
+}
+.intro__picture {
+  border-radius: 40px 40px 40px 0px;
+  overflow: hidden;
+  flex: 0 0 540px;
+}
+.intro__image {
+  max-width: 100%;
+  height: auto;
 }
