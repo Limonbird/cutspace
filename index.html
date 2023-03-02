@@ -39,7 +39,24 @@
               <p class="intro__subtitle">
                 In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
               </p>
-              <div class="intro__form">form</div>
+              <form action="" class="intro-form">
+                <!-- label - чтобы клик по всей области активировал инпут -->
+                <label class="intro-form__label">
+                  <span class="intro-form__icon">
+                    <svg width="24px" height="19px">
+                      <use href="./assets/icons.svg#mail" />
+                    </svg>
+                  </span>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Your email address"
+                    class="intro-form__input"
+                  />
+                  <button type="submit" class="intro-form__button">Subscribe</button>
+                </label>
+              </form>
             </div>
 
             <figure class="intro__picture">

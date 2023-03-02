@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-:focus {
-  outline: 0; // @TODO: подумать как переопределить. Не нравится полностью убирать, не видно при переходах по tab.
-}
-
 body {
   color: $black;
   font-family: 'Poppins', sans-serif;
@@ -39,7 +35,6 @@ input,
 button {
   font-family: inherit;
   font-size: inherit;
-  // border: 0; // @TODO: стоит ли убирать?
 }
 
 ul {

@@ -1,7 +1,7 @@
 // base
 @import 'base/fonts';
 @import 'base/variables';
-@import 'base/reset';
+@import 'base/reset'; // располагать внизу
 
 // mixins
 // располагать над блоками
@@ -10,3 +10,4 @@
 // blocks
 @import 'blocks/header';
 @import 'blocks/intro';
+@import 'blocks/intro-form';

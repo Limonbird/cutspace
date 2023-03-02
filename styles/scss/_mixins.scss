@@ -1,7 +1,7 @@
 @mixin container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px; // 1110 (по макету) + 30 (два паддинга)
+  max-width: 1140px; // 1110 (по макету) + 30 (два паддинга по 15)
   padding-left: 15px; // чтобы в мобайле не прилипал к краям
   padding-right: 15px;
 }
@@ -9,4 +9,37 @@
 @mixin list-unstyled {
   list-style: none;
   padding-left: 0;
+}
+
+%button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 17px 37px;
+  transition: background-color 200ms ease;
+
+  &:focus {
+    box-shadow: 0 0 15px $orange;
+    outline: none;
+  }
+}
+
+@mixin button-primary {
+  @extend %button;
+  background-color: $orange;
+  color: #fff;
+
+  &:hover {
+    background-color: $orange-dark;
+  }
+}
+
+@mixin input {
+  border: 0;
+  color: $black;
+
+  &:focus {
+    outline: none;
+  }
 }

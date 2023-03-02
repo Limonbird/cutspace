@@ -14,10 +14,6 @@
   box-sizing: border-box;
 }
 
-:focus {
-  outline: 0;
-}
-
 body {
   color: #323232;
   font-family: "Poppins", sans-serif;
@@ -72,6 +68,19 @@ figure {
 img,
 svg {
   vertical-align: middle;
+}
+
+.intro-form__button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 17px 37px;
+  transition: background-color 200ms ease;
+}
+.intro-form__button:focus {
+  box-shadow: 0 0 15px #f78434;
+  outline: none;
 }
 
 .header__container {
@@ -136,14 +145,52 @@ svg {
   position: relative;
 }
 .intro__subtitle {
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 .intro__picture {
   border-radius: 40px 40px 40px 0px;
   overflow: hidden;
-  flex: 0 0 540px;
 }
 .intro__image {
   max-width: 100%;
   height: auto;
+}
+
+.intro-form {
+  border-radius: 30px;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 200ms ease-in;
+  width: 459px;
+}
+.intro-form--active {
+  box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.32);
+}
+.intro-form__label {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+  padding-left: 28px;
+}
+.intro-form__input {
+  border: 0;
+  color: #323232;
+  max-width: 210px;
+}
+.intro-form__input:focus {
+  outline: none;
+}
+.intro-form__input::-moz-placeholder {
+  color: #bbbbbb;
+}
+.intro-form__input::placeholder {
+  color: #bbbbbb;
+}
+.intro-form__button {
+  background-color: #f78434;
+  color: #fff;
+  margin-left: auto;
+}
+.intro-form__button:hover {
+  background-color: #ef7219;
 }
