@@ -70,7 +70,16 @@ svg {
   vertical-align: middle;
 }
 
-.intro-form__button {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.button {
+  background-color: #fff;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -78,18 +87,21 @@ svg {
   padding: 17px 37px;
   transition: background-color 200ms ease;
 }
-.intro-form__button:focus {
+.button:hover {
+  background-color: #f78434;
+}
+.button:focus {
   box-shadow: 0 0 15px #f78434;
   outline: none;
 }
-
-.header__container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
+.button--accented {
+  background-color: #f78434;
+  color: #fff;
 }
+.button--accented:hover {
+  background-color: #ef7219;
+}
+
 .header__body {
   align-items: center;
   display: flex;
@@ -126,13 +138,6 @@ svg {
 
 .intro {
   margin-bottom: 100px;
-}
-.intro__container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .intro__body {
   display: grid;
@@ -190,23 +195,11 @@ svg {
   color: #bbbbbb;
 }
 .intro-form__button {
-  background-color: #f78434;
-  color: #fff;
   margin-left: auto;
-}
-.intro-form__button:hover {
-  background-color: #ef7219;
 }
 
 .partners {
   margin-bottom: 90px;
-}
-.partners__container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1140px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 .partners__list {
   list-style: none;

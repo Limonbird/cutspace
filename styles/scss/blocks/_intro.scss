@@ -1,10 +1,6 @@
 .intro {
   margin-bottom: 100px;
 
-  &__container {
-    @include container;
-  }
-
   &__body {
     display: grid;
     grid-template-columns: 1fr 540px;

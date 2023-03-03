@@ -1,0 +1,27 @@
+.button {
+  background-color: #fff;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 17px 37px;
+  transition: background-color 200ms ease;
+
+  &:hover {
+    background-color: $orange;
+  }
+
+  &:focus {
+    box-shadow: 0 0 15px $orange;
+    outline: none;
+  }
+
+  &--accented {
+    background-color: $orange;
+    color: #fff;
+
+    &:hover {
+      background-color: $orange-dark;
+    }
+  }
+}
