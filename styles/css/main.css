@@ -136,9 +136,13 @@ svg {
   transform: scale(1.05);
 }
 
-.intro {
+.page__intro {
   margin-bottom: 100px;
 }
+.page__partners {
+  margin-bottom: 90px;
+}
+
 .intro__body {
   display: grid;
   grid-template-columns: 1fr 540px;
@@ -198,9 +202,6 @@ svg {
   margin-left: auto;
 }
 
-.partners {
-  margin-bottom: 90px;
-}
 .partners__list {
   list-style: none;
   padding: 0;
