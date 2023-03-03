@@ -1,0 +1,32 @@
+.intro-form {
+  border-radius: 30px;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 200ms ease-in;
+  width: 459px;
+
+  &--active {
+    box-shadow: 0px 17px 42px rgba($orange, 0.32);
+  }
+
+  &__label {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    padding-left: 28px;
+  }
+
+  &__input {
+    @include input;
+    max-width: 210px;
+
+    &::placeholder {
+      color: #bbbbbb;
+    }
+  }
+
+  &__button {
+    @include button-primary;
+    margin-left: auto;
+  }
+}

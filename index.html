@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cutspace</title>
+    <link rel="stylesheet" href="styles/css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__body">
+          <div class="header__logo">
+            <svg width="30px" height="30px">
+              <title>CutSpace</title>
+              <use href="./assets/icons.svg#logo" />
+            </svg>
+            <span class="header__title">CutSpace</span>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li><a href="#" class="header__link">Home</a></li>
+              <li><a href="#" class="header__link header__link--active">About us</a></li>
+              <li><a href="#" class="header__link">Find space</a></li>
+              <li><a href="#" class="header__link">Share space</a></li>
+              <li><a href="#" class="header__link">Promote space</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__container">
+          <div class="intro__body">
+            <div class="intro__content">
+              <h1 class="intro__title">Find your custom matched commercial real estate space.</h1>
+              <p class="intro__subtitle">
+                In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
+              </p>
+              <form action="" class="intro-form">
+                <!-- label - чтобы клик по всей области активировал инпут -->
+                <label class="intro-form__label">
+                  <span class="intro-form__icon">
+                    <svg width="24px" height="19px">
+                      <use href="./assets/icons.svg#mail" />
+                    </svg>
+                  </span>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Your email address"
+                    class="intro-form__input"
+                  />
+                  <button type="submit" class="intro-form__button">Subscribe</button>
+                </label>
+              </form>
+            </div>
+
+            <figure class="intro__picture">
+              <img
+                src="./assets/images/content/intro.jpg"
+                srcset="./assets/images/content/intro@2x.jpg 2x"
+                alt="Intro image"
+                class="intro__image"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

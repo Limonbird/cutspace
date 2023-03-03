@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "Poppins";
+  font-weight: normal;
+  src: local("Poppins"), local("Poppins-Regular"), url("../../assets/fonts/Poppins-Regular.woff2") format("woff2"), url("../../assets/fonts/Poppins-Regular.woff2") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../../assets/fonts/Poppins-Bold.woff2") format("woff2"), url("../../assets/fonts/Poppins-Bold.woff2") format("woff");
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #323232;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1.15px;
+  line-height: 1.69;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  line-height: 1.48;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 54px;
+  line-height: 1.46;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #f78434;
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.intro-form__button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 17px 37px;
+  transition: background-color 200ms ease;
+}
+.intro-form__button:focus {
+  box-shadow: 0 0 15px #f78434;
+  outline: none;
+}
+
+.header__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header__body {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 33px;
+  padding-top: 37px;
+  letter-spacing: normal;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.header__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 42px;
+}
+.header__link {
+  display: block;
+}
+.header__link:hover {
+  transform: scale(1.05);
+}
+.header__link--active {
+  color: #f78434;
+  transform: scale(1.05);
+}
+
+.intro__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.intro__body {
+  display: grid;
+  grid-template-columns: 1fr 540px;
+}
+.intro__content {
+  padding-top: 127px;
+  padding-right: 103px;
+}
+.intro__title {
+  margin-bottom: 25px;
+  margin-right: -170px;
+  position: relative;
+}
+.intro__subtitle {
+  margin-bottom: 44px;
+}
+.intro__picture {
+  border-radius: 40px 40px 40px 0px;
+  overflow: hidden;
+}
+.intro__image {
+  max-width: 100%;
+  height: auto;
+}
+
+.intro-form {
+  border-radius: 30px;
+  box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 200ms ease-in;
+  width: 459px;
+}
+.intro-form--active {
+  box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.32);
+}
+.intro-form__label {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  max-width: 100%;
+  padding-left: 28px;
+}
+.intro-form__input {
+  border: 0;
+  color: #323232;
+  max-width: 210px;
+}
+.intro-form__input:focus {
+  outline: none;
+}
+.intro-form__input::-moz-placeholder {
+  color: #bbbbbb;
+}
+.intro-form__input::placeholder {
+  color: #bbbbbb;
+}
+.intro-form__button {
+  background-color: #f78434;
+  color: #fff;
+  margin-left: auto;
+}
+.intro-form__button:hover {
+  background-color: #ef7219;
+}
