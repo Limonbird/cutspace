@@ -1,0 +1,14 @@
+.partners {
+  margin-bottom: 90px;
+
+  &__container {
+    @include container;
+  }
+
+  &__list {
+    @include list-unstyled;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

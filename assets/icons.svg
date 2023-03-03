@@ -17,7 +17,7 @@
       d="m14.86 10.135-2.41 2.315a.701.701 0 0 1-.994 0l-2.315-2.315-7.936 7.935c.275.131.58.211.904.211h19.782c.324 0 .628-.08.903-.211l-7.934-7.935Z"
     />
   </symbol>
-  <symbol id="company_1" fill="none" viewBox="0 0 217 42">
+  <symbol id="partner_1" fill="none" viewBox="0 0 217 42">
     <path
       fill="#D8D8D8"
       fill-rule="evenodd"
@@ -32,7 +32,7 @@
       clip-rule="evenodd"
     />
   </symbol>
-  <symbol id="company_2" fill="none" viewBox="0 0 190 35">
+  <symbol id="partner_2" fill="none" viewBox="0 0 190 35">
     <path
       fill="#D8D8D8"
       fill-rule="evenodd"
@@ -45,7 +45,7 @@
     />
   </symbol>
 
-  <symbol id="company_3" fill="none" viewBox="0 0 230 42">
+  <symbol id="partner_3" fill="none" viewBox="0 0 230 42">
     <path
       fill="#D8D8D8"
       fill-rule="evenodd"
@@ -54,7 +54,7 @@
     />
     <circle cx="5.88" cy="35.56" r="5.88" fill="#D8D8D8" />
   </symbol>
-  <symbol id="company_4" fill="none" viewBox="0 0 188 38">
+  <symbol id="partner_4" fill="none" viewBox="0 0 188 38">
     <path
       fill="#D8D8D8"
       fill-rule="evenodd"

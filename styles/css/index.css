@@ -109,7 +109,7 @@ svg {
 }
 .header__list {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   display: flex;
   gap: 42px;
 }
@@ -124,6 +124,9 @@ svg {
   transform: scale(1.05);
 }
 
+.intro {
+  margin-bottom: 100px;
+}
 .intro__container {
   margin-left: auto;
   margin-right: auto;
@@ -193,4 +196,22 @@ svg {
 }
 .intro-form__button:hover {
   background-color: #ef7219;
+}
+
+.partners {
+  margin-bottom: 90px;
+}
+.partners__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.partners__list {
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
