@@ -3,12 +3,15 @@
   border-radius: 30px;
   border: none;
   cursor: pointer;
+  display: inline-block;
   font-weight: bold;
+  letter-spacing: normal;
   padding: 17px 37px;
   transition: background-color 200ms ease;
 
   &:hover {
     background-color: $orange;
+    color: #fff;
   }
 
   &:focus {

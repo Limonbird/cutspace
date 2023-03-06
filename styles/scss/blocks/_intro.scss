@@ -22,11 +22,9 @@
   &__picture {
     border-radius: 40px 40px 40px 0px;
     overflow: hidden;
-    // flex: 0 0 540px;
   }
 
   &__image {
-    max-width: 100%;
-    height: auto;
+    @include image;
   }
 }
