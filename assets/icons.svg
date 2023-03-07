@@ -77,9 +77,8 @@
       clip-rule="evenodd"
     />
   </symbol>
-  <symbol id="play" fill="none" viewBox="0 0 11 12">
+  <symbol id="play" viewBox="0 0 11 12">
     <path
-      fill="#F78434"
       fill-rule="evenodd"
       d="M10.211 5.106a1 1 0 0 1 0 1.788l-8.764 4.382A1 1 0 0 1 0 10.382V1.618A1 1 0 0 1 1.447.724l8.764 4.382Z"
       clip-rule="evenodd"

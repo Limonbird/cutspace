@@ -1,5 +1,6 @@
 .button {
   background-color: #fff;
+  color: $black;
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -7,6 +8,7 @@
   font-weight: bold;
   letter-spacing: normal;
   padding: 17px 37px;
+  text-align: center;
   transition: background-color 200ms ease;
 
   &:hover {
