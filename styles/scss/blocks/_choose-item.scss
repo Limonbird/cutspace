@@ -2,17 +2,9 @@
   text-align: center;
 
   &__icon {
-    // @TODO mixin circle
-    align-items: center;
-    background-color: rgba($aqua, 0.2);
-    border-radius: 50%;
-    display: flex;
-    flex-shrink: 0;
-    height: 70px;
-    justify-content: center;
+    @include bg-circle(70px);
     margin: 0 auto 15px;
     transition: $base-duration ease;
-    width: 70px;
 
     .choose-item:hover & {
       background-color: $orange;

@@ -313,10 +313,10 @@ svg {
   background-color: rgba(88, 190, 191, 0.2);
   border-radius: 50%;
   display: flex;
-  flex-shrink: 0;
   height: 45px;
   justify-content: center;
   width: 45px;
+  flex-shrink: 0;
 }
 .provide-hint__content {
   margin-left: 20px;
@@ -449,12 +449,11 @@ svg {
   background-color: rgba(88, 190, 191, 0.2);
   border-radius: 50%;
   display: flex;
-  flex-shrink: 0;
   height: 70px;
   justify-content: center;
+  width: 70px;
   margin: 0 auto 15px;
   transition: 200ms ease;
-  width: 70px;
 }
 .choose-item:hover .choose-item__icon {
   background-color: #f78434;

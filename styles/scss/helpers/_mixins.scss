@@ -7,3 +7,13 @@
   max-width: 100%;
   height: auto;
 }
+
+@mixin bg-circle($size: 45px) {
+  align-items: center;
+  background-color: rgba($aqua, 0.2);
+  border-radius: 50%;
+  display: flex;
+  height: $size;
+  justify-content: center;
+  width: $size;
+}

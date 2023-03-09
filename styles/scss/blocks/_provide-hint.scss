@@ -12,15 +12,8 @@
   }
 
   &__icon {
-    // @TODO: возможно для кружка-подложки позже сделать миксин
-    align-items: center;
-    background-color: rgba($aqua, 0.2);
-    border-radius: 50%;
-    display: flex;
+    @include bg-circle(45px);
     flex-shrink: 0;
-    height: 45px;
-    justify-content: center;
-    width: 45px;
   }
 
   &__content {
