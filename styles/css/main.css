@@ -46,6 +46,11 @@ h3 {
   font-size: 42px;
 }
 
+h4 {
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
 h6 {
   font-size: inherit;
 }
@@ -168,6 +173,12 @@ svg {
 }
 .page__using {
   margin-bottom: 144px;
+}
+.page__serve {
+  margin-bottom: 113px;
+}
+.page__choose {
+  margin-bottom: 112px;
 }
 
 .intro__body {
@@ -417,4 +428,43 @@ svg {
 }
 .serve-card__button:hover {
   outline: 1px solid #fff;
+}
+
+.choose__title {
+  margin-bottom: 58px;
+  text-align: center;
+}
+.choose__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 35px;
+}
+
+.choose-item {
+  text-align: center;
+}
+.choose-item__icon {
+  align-items: center;
+  background-color: rgba(88, 190, 191, 0.2);
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  height: 70px;
+  justify-content: center;
+  margin: 0 auto 15px;
+  transition: 200ms ease;
+  width: 70px;
+}
+.choose-item:hover .choose-item__icon {
+  background-color: #f78434;
+}
+.choose-item__icon > svg {
+  fill: #58bebf;
+}
+.choose-item:hover .choose-item__icon > svg {
+  fill: #fff;
+}
+.choose-item__title {
+  margin-bottom: 2px;
 }
