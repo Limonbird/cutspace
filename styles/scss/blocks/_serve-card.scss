@@ -1,6 +1,6 @@
 .serve-card {
   align-items: center;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 10px;
   box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
   display: flex;
@@ -8,11 +8,11 @@
   justify-content: space-between;
   padding: 40px 88px;
   text-align: center;
-  transition: 200ms ease; // @TODO: 200ms into vars + check other transitions
+  transition: $base-duration ease;
 
   &:hover {
     background-color: $orange;
-    color: #fff;
+    color: $white;
   }
 
   &__title {
@@ -22,10 +22,10 @@
   &__icon {
     fill: $orange;
     margin-bottom: 15px;
-    transition: fill 200ms ease; // @TODO vars
+    transition: fill $base-duration ease;
 
     .serve-card:hover & {
-      fill: #fff;
+      fill: $white;
     }
   }
 
@@ -34,7 +34,7 @@
     margin-top: 25px;
 
     &:hover {
-      outline: 1px solid #fff;
+      outline: 1px solid $white;
     }
   }
 }

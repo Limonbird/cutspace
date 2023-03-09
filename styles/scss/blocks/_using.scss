@@ -9,7 +9,7 @@
   }
 
   &__picture {
-    background-color: #fff;
+    background-color: $white;
     border-top-right-radius: 21px;
     bottom: 0;
     left: 0;
@@ -19,7 +19,7 @@
   }
 
   &__content {
-    color: #fff;
+    color: $white;
     margin-left: auto;
     width: 364px;
   }
@@ -47,10 +47,10 @@
   &__play-icon {
     fill: $orange;
     margin-right: 5px;
-    transition: fill 200ms ease;
+    transition: fill $base-duration ease;
 
     .using__play-button:hover & {
-      fill: #fff;
+      fill: $white;
     }
   }
 }
