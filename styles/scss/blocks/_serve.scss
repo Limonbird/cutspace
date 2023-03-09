@@ -1,0 +1,29 @@
+.serve {
+  position: relative;
+
+  &:before {
+    background-color: $grey;
+    bottom: 185px;
+    content: '';
+    height: 704px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__header {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    @include list-unstyled;
+    display: flex;
+    gap: 30px;
+  }
+}

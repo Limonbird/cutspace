@@ -39,7 +39,7 @@
               <p class="intro__subtitle">
                 In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
               </p>
-              <form action="" class="intro-form">
+              <form class="intro-form">
                 <!-- label - чтобы клик по всей области активировал инпут -->
                 <label class="intro-form__label">
                   <span class="intro-form__icon">
@@ -54,6 +54,7 @@
                     placeholder="Your email address"
                     class="intro-form__input"
                   />
+                  <!-- @TODO: исправить: вынести button из label, получилось что один label на 2 форм-элемента -->
                   <button type="submit" class="button button--accented intro-form__button">Subscribe</button>
                 </label>
               </form>
@@ -70,7 +71,7 @@
           </div>
         </div>
       </section>
-      <section class="partners page__partners">
+      <div class="partners page__partners">
         <div class="container">
           <ul class="partners__list">
             <li>
@@ -95,7 +96,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </div>
       <section class="provide page__provide">
         <div class="container">
           <div class="provide__body">
@@ -186,6 +187,36 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="serve page__serve">
+        <div class="container">
+          <header class="serve__header">
+            <h2 class="serve__title">Who do we serve?</h2>
+            <p>Every buyer and seller of tech and services in the world.</p>
+          </header>
+          <ul class="serve__list">
+            <li class="serve-card">
+              <div class="serve-card__body">
+                <svg width="70px" height="70px" class="serve-card__icon">
+                  <use href="./assets/icons.svg#buyer"></use>
+                </svg>
+                <h3 class="serve-card__title">Buyers</h3>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad eam.</p>
+              </div>
+              <a href="#" class="button serve-card__button">Get Started</a>
+            </li>
+            <li class="serve-card">
+              <div class="serve-card__body">
+                <svg width="59px" height="70px" class="serve-card__icon">
+                  <use href="./assets/icons.svg#seller"></use>
+                </svg>
+                <h3 class="serve-card__title">Seller</h3>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad eam.</p>
+              </div>
+              <a href="#" class="button serve-card__button">Get Started</a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
