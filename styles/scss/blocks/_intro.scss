@@ -1,8 +1,4 @@
 .intro {
-  &__container {
-    @include container;
-  }
-
   &__body {
     display: grid;
     grid-template-columns: 1fr 540px;
@@ -26,11 +22,9 @@
   &__picture {
     border-radius: 40px 40px 40px 0px;
     overflow: hidden;
-    // flex: 0 0 540px;
   }
 
   &__image {
-    max-width: 100%;
-    height: auto;
+    @include image;
   }
 }

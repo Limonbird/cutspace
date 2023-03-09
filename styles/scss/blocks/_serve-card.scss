@@ -1,0 +1,40 @@
+.serve-card {
+  align-items: center;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 88px;
+  text-align: center;
+  transition: $base-duration ease;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+  }
+
+  &__title {
+    margin-bottom: 1px;
+  }
+
+  &__icon {
+    fill: $orange;
+    margin-bottom: 15px;
+    transition: fill $base-duration ease;
+
+    .serve-card:hover & {
+      fill: $white;
+    }
+  }
+
+  &__button {
+    color: $orange;
+    margin-top: 25px;
+
+    &:hover {
+      outline: 1px solid $white;
+    }
+  }
+}

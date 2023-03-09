@@ -1,0 +1,8 @@
+.partners {
+  &__list {
+    @include list-unstyled;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

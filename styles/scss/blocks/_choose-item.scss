@@ -1,0 +1,25 @@
+.choose-item {
+  text-align: center;
+
+  &__icon {
+    @include bg-circle(70px);
+    margin: 0 auto 15px;
+    transition: $base-duration ease;
+
+    .choose-item:hover & {
+      background-color: $orange;
+    }
+
+    & > svg {
+      fill: $aqua;
+
+      .choose-item:hover & {
+        fill: $white;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 2px;
+  }
+}

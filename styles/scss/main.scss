@@ -1,0 +1,27 @@
+// helpers
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+// base - располагать ниже helpers
+@import 'base/fonts';
+@import 'base/reset';
+
+// components
+@import 'components/container';
+@import 'components/button';
+
+// layout
+@import 'layout/header';
+
+// blocks
+@import 'blocks/page';
+@import 'blocks/intro';
+@import 'blocks/intro-form';
+@import 'blocks/partners';
+@import 'blocks/provide';
+@import 'blocks/provide-hint';
+@import 'blocks/using';
+@import 'blocks/serve';
+@import 'blocks/serve-card';
+@import 'blocks/choose';
+@import 'blocks/choose-item';

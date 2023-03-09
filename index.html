@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cutspace</title>
-    <link rel="stylesheet" href="styles/css/index.css" />
+    <link rel="stylesheet" href="styles/css/main.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="container">
         <div class="header__body">
           <div class="header__logo">
             <svg width="30px" height="30px">
@@ -30,17 +30,16 @@
         </div>
       </div>
     </header>
-    <main>
-      <section class="intro">
-        <div class="intro__container">
+    <main class="page">
+      <section class="intro page__intro">
+        <div class="container">
           <div class="intro__body">
             <div class="intro__content">
               <h1 class="intro__title">Find your custom matched commercial real estate space.</h1>
               <p class="intro__subtitle">
                 In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
               </p>
-              <form action="" class="intro-form">
-                <!-- label - чтобы клик по всей области активировал инпут -->
+              <form class="intro-form">
                 <label class="intro-form__label">
                   <span class="intro-form__icon">
                     <svg width="24px" height="19px">
@@ -54,8 +53,8 @@
                     placeholder="Your email address"
                     class="intro-form__input"
                   />
-                  <button type="submit" class="intro-form__button">Subscribe</button>
                 </label>
+                <button type="submit" class="button button--accented">Subscribe</button>
               </form>
             </div>
 
@@ -67,6 +66,199 @@
                 class="intro__image"
               />
             </figure>
+          </div>
+        </div>
+      </section>
+      <div class="partners page__partners">
+        <div class="container">
+          <ul class="partners__list">
+            <li>
+              <svg width="217px" height="42px">
+                <use href="./assets/icons.svg#partner_1" />
+              </svg>
+            </li>
+            <li>
+              <svg width="190px" height="34px">
+                <use href="./assets/icons.svg#partner_2" />
+              </svg>
+            </li>
+            <li>
+              <svg width="230px" height="42px">
+                <use href="./assets/icons.svg#partner_3" />
+              </svg>
+            </li>
+            <li>
+              <svg width="188px" height="38px">
+                <use href="./assets/icons.svg#partner_4" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="provide page__provide">
+        <div class="container">
+          <div class="provide__body">
+            <div class="provide__gallery">
+              <div class="provide__card">
+                <figure class="provide__picture">
+                  <img
+                    src="./assets/images/content/provide-01.jpg"
+                    srcset="./assets/images/content/provide-01@2x.jpg 2x"
+                    alt="Provide picture"
+                    class="provide__image"
+                  />
+                </figure>
+                <div class="provide__hint">
+                  <div class="provide-hint">
+                    <div class="provide-hint__icon">
+                      <svg width="16px" height="23px">
+                        <use href="./assets/icons.svg#building" />
+                      </svg>
+                    </div>
+
+                    <div class="provide-hint__content">
+                      <h6 class="provide-hint__title">Lorem, ipsum.</h6>
+                      <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="provide__card">
+                <figure class="provide__picture provide__picture--sharp">
+                  <img
+                    src="./assets/images/content/provide-02.jpg"
+                    srcset="./assets/images/content/provide-02@2x.jpg 2x"
+                    alt="Provide picture"
+                    class="provide__image"
+                  />
+                </figure>
+                <div class="provide__hint">
+                  <div class="provide-hint">
+                    <div class="provide-hint__icon">
+                      <svg width="16px" height="23px">
+                        <use href="./assets/icons.svg#building" />
+                      </svg>
+                    </div>
+
+                    <div class="provide-hint__content">
+                      <h6 class="provide-hint__title">Twelve West Lake</h6>
+                      <p>Space for up to 150 people</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="provide__content">
+              <h2 class="provide__title">We provide best space for you!</h2>
+              <p>
+                Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex ea quid est et via procedat oratio
+                quaerimus.
+              </p>
+              <p>quid aut ad id omnia referri oporteat, ipsum autem nusquam hoc epicurus in ea commodi consequatur?</p>
+              <a href="#" class="button button--accented provide__button">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="using page__using">
+        <div class="container">
+          <div class="using__body">
+            <figure class="using__picture">
+              <img
+                src="./assets/images/content/using.jpg"
+                srcset="./assets/images/content/using@2x.jpg 2x"
+                alt="Using image"
+              />
+            </figure>
+            <div class="using__content">
+              <h2 class="using__title">Start using our product</h2>
+              <p>Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex</p>
+
+              <div class="using__action">
+                <a href="#" class="button button--accented">Contact Us</a>
+                <button class="button using__play-button">
+                  <svg width="12px" height="12px" class="using__play-icon">
+                    <use href="./assets/icons.svg#play" />
+                  </svg>
+                  <span>Watch now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="serve page__serve">
+        <div class="container">
+          <header class="serve__header">
+            <h2 class="serve__title">Who do we serve?</h2>
+            <p>Every buyer and seller of tech and services in the world.</p>
+          </header>
+          <ul class="serve__list">
+            <li class="serve-card">
+              <div class="serve-card__body">
+                <svg width="70px" height="70px" class="serve-card__icon">
+                  <use href="./assets/icons.svg#buyer"></use>
+                </svg>
+                <h3 class="serve-card__title">Buyers</h3>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad eam.</p>
+              </div>
+              <a href="#" class="button serve-card__button">Get Started</a>
+            </li>
+            <li class="serve-card">
+              <div class="serve-card__body">
+                <svg width="70px" height="70px" class="serve-card__icon">
+                  <use href="./assets/icons.svg#seller"></use>
+                </svg>
+                <h3 class="serve-card__title">Seller</h3>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad eam.</p>
+              </div>
+              <a href="#" class="button serve-card__button">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section choose page__choose">
+        <div class="container">
+          <div class="choose__body">
+            <h2 class="choose__title">Why choose us?</h2>
+            <ul class="choose__list">
+              <li class="choose-item">
+                <div class="choose-item__icon">
+                  <svg width="39px" height="30px">
+                    <use href="./assets/icons.svg#performance" />
+                  </svg>
+                </div>
+                <h4 class="choose-item__title">Performance</h4>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+              </li>
+              <li class="choose-item">
+                <div class="choose-item__icon">
+                  <svg width="22.5px" height="30px">
+                    <use href="./assets/icons.svg#entrepreneurship" />
+                  </svg>
+                </div>
+                <h4 class="choose-item__title">Entrepreneurship</h4>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+              </li>
+              <li class="choose-item">
+                <div class="choose-item__icon">
+                  <svg width="21.8px" height="26.5px">
+                    <use href="./assets/icons.svg#authenticity" />
+                  </svg>
+                </div>
+                <h4 class="choose-item__title">Authenticity</h4>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+              </li>
+              <li class="choose-item">
+                <div class="choose-item__icon">
+                  <svg width="36.5px" height="30px">
+                    <use href="./assets/icons.svg#kindness" />
+                  </svg>
+                </div>
+                <h4 class="choose-item__title">Kindness</h4>
+                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>

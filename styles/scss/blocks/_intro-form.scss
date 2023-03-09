@@ -1,7 +1,10 @@
 .intro-form {
+  align-items: center;
   border-radius: 30px;
   box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
-  transition: box-shadow 200ms ease-in;
+  display: flex;
+  justify-content: space-between;
+  transition: box-shadow $base-duration ease;
   width: 459px;
 
   &--active {
@@ -9,24 +12,21 @@
   }
 
   &__label {
-    align-items: center;
-    display: flex;
-    gap: 20px;
-    max-width: 100%;
     padding-left: 28px;
   }
 
   &__input {
-    @include input;
+    border: 0;
+    color: $black;
+    margin-left: 10px;
     max-width: 210px;
+
+    &:focus {
+      outline: none;
+    }
 
     &::placeholder {
       color: #bbbbbb;
     }
-  }
-
-  &__button {
-    @include button-primary;
-    margin-left: auto;
   }
 }

@@ -1,8 +1,4 @@
 .header {
-  &__container {
-    @include container;
-  }
-
   &__body {
     align-items: center;
     display: flex;
