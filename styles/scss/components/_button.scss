@@ -29,4 +29,15 @@
       background-color: $orange-dark;
     }
   }
+
+  &--blue {
+    &:hover {
+      background-color: $aqua;
+      outline: 1px solid $white;
+    }
+
+    &:focus {
+      box-shadow: 0 0 15px $white;
+    }
+  }
 }
