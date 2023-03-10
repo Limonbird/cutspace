@@ -131,6 +131,13 @@ svg {
 .button--accented:hover {
   background-color: #ef7219;
 }
+.button--blue:hover {
+  background-color: #58bebf;
+  outline: 1px solid #fff;
+}
+.button--blue:focus {
+  box-shadow: 0 0 15px #fff;
+}
 
 .header__body {
   align-items: center;
@@ -170,7 +177,7 @@ svg {
   margin-bottom: 100px;
 }
 .page__partners {
-  margin-bottom: 90px;
+  margin-bottom: 91px;
 }
 .page__provide {
   margin-bottom: 154px;
@@ -183,6 +190,9 @@ svg {
 }
 .page__choose {
   margin-bottom: 110px;
+}
+.page__words {
+  margin-bottom: 40px;
 }
 
 .intro__body {
@@ -473,7 +483,7 @@ svg {
 }
 
 .words__body {
-  padding: 60px 0;
+  padding: 60px 0 42px 0;
 }
 .words__header {
   align-items: center;
@@ -583,4 +593,43 @@ svg {
 }
 .words-item__body:hover .words-item__place {
   color: #f78434;
+}
+
+.experience {
+  background: url("../../assets/images/bg/slope.svg") no-repeat bottom;
+}
+.experience__body {
+  align-items: flex-end;
+  display: flex;
+  gap: 175px;
+  height: 505px;
+}
+.experience__picture {
+  position: relative;
+}
+.experience__picture::before {
+  background: url("../../assets/images/bg/semicircle.svg") no-repeat;
+  bottom: 0;
+  content: "";
+  height: 372px;
+  left: -80px;
+  position: absolute;
+  width: 743px;
+}
+.experience__image {
+  position: relative;
+  z-index: 1;
+}
+.experience__content {
+  color: #fff;
+  padding-bottom: 55px;
+  width: 360px;
+}
+.experience__title {
+  margin-bottom: 15px;
+}
+.experience__button {
+  margin-top: 30px;
+  padding-left: 42px;
+  padding-right: 39px;
 }
