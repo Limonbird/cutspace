@@ -54,7 +54,7 @@
                     class="intro-form__input"
                   />
                 </label>
-                <button type="submit" class="button button--accented">Subscribe</button>
+                <button type="submit" class="button button--accented intro-form__button">Subscribe</button>
               </form>
             </div>
 
@@ -195,7 +195,7 @@
           </header>
           <ul class="serve__list">
             <li class="serve-card">
-              <div class="serve-card__body">
+              <div>
                 <svg width="70px" height="70px" class="serve-card__icon">
                   <use href="./assets/icons.svg#buyer"></use>
                 </svg>
@@ -205,7 +205,7 @@
               <a href="#" class="button serve-card__button">Get Started</a>
             </li>
             <li class="serve-card">
-              <div class="serve-card__body">
+              <div>
                 <svg width="70px" height="70px" class="serve-card__icon">
                   <use href="./assets/icons.svg#seller"></use>
                 </svg>
@@ -219,46 +219,149 @@
       </section>
       <section class="section choose page__choose">
         <div class="container">
-          <div class="choose__body">
-            <h2 class="choose__title">Why choose us?</h2>
-            <ul class="choose__list">
-              <li class="choose-item">
-                <div class="choose-item__icon">
-                  <svg width="39px" height="30px">
-                    <use href="./assets/icons.svg#performance" />
-                  </svg>
-                </div>
-                <h4 class="choose-item__title">Performance</h4>
-                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
-              </li>
-              <li class="choose-item">
-                <div class="choose-item__icon">
-                  <svg width="22.5px" height="30px">
-                    <use href="./assets/icons.svg#entrepreneurship" />
-                  </svg>
-                </div>
-                <h4 class="choose-item__title">Entrepreneurship</h4>
-                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
-              </li>
-              <li class="choose-item">
-                <div class="choose-item__icon">
-                  <svg width="21.8px" height="26.5px">
-                    <use href="./assets/icons.svg#authenticity" />
-                  </svg>
-                </div>
-                <h4 class="choose-item__title">Authenticity</h4>
-                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
-              </li>
-              <li class="choose-item">
-                <div class="choose-item__icon">
-                  <svg width="36.5px" height="30px">
-                    <use href="./assets/icons.svg#kindness" />
-                  </svg>
-                </div>
-                <h4 class="choose-item__title">Kindness</h4>
-                <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
-              </li>
-            </ul>
+          <h2 class="choose__title">Why choose us?</h2>
+          <ul class="choose__list">
+            <li class="choose-item">
+              <div class="choose-item__icon">
+                <svg width="39px" height="30px" class="choose-item__svg">
+                  <use href="./assets/icons.svg#performance" />
+                </svg>
+              </div>
+              <h4 class="choose-item__title">Performance</h4>
+              <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+            </li>
+            <li class="choose-item">
+              <div class="choose-item__icon">
+                <svg width="22.5px" height="30px" class="choose-item__svg">
+                  <use href="./assets/icons.svg#entrepreneurship" />
+                </svg>
+              </div>
+              <h4 class="choose-item__title">Entrepreneurship</h4>
+              <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+            </li>
+            <li class="choose-item">
+              <div class="choose-item__icon">
+                <svg width="21.8px" height="26.5px" class="choose-item__svg">
+                  <use href="./assets/icons.svg#authenticity" />
+                </svg>
+              </div>
+              <h4 class="choose-item__title">Authenticity</h4>
+              <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+            </li>
+            <li class="choose-item">
+              <div class="choose-item__icon">
+                <svg width="36.5px" height="30px" class="choose-item__svg">
+                  <use href="./assets/icons.svg#kindness" />
+                </svg>
+              </div>
+              <h4 class="choose-item__title">Kindness</h4>
+              <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="words page__words">
+        <div class="container container--wide">
+          <div class="words__body">
+            <header class="words__header">
+              <h2 class="words__title">Thanks for your nice words to us</h2>
+              <p class="words__subtitle">
+                Si sine causa, nollem me tamen laudandis maioribus meis corrupisti nec voluptas
+              </p>
+            </header>
+            <div class="words__row">
+              <ul class="words__list">
+                <li class="words-item">
+                  <a href="#" class="words-item__body">
+                    <div class="words-item__media">
+                      <figure class="words-item__picture">
+                        <img
+                          src="./assets/images/content/words-01.jpg"
+                          srcset="./assets/images/content/words-01@2x.jpg 2x"
+                          alt="Arend Pellewever"
+                          class="words-item__image"
+                        />
+                      </figure>
+                      <span class="words-item__icon">
+                        <svg width="15px" height="15px" class="words-item__svg">
+                          <use href="./assets/icons.svg#play" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="words-item__content">
+                      <div class="words-item__text">
+                        <p>"Omne animal, simul atque integre iudicante itaque earum motus et."</p>
+                      </div>
+                      <div class="words-item__caption">
+                        <div class="words-item__author">Arend Pellewever</div>
+                        <div class="words-item__place">Baltimore</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="words-item">
+                  <a href="#" class="words-item__body">
+                    <div class="words-item__media">
+                      <figure class="words-item__picture">
+                        <img
+                          src="./assets/images/content/words-02.jpg"
+                          srcset="./assets/images/content/words-02@2x.jpg 2x"
+                          alt="Lisanne Viscaal"
+                          class="words-item__image"
+                        />
+                      </figure>
+                      <span class="words-item__icon">
+                        <svg width="15px" height="15px" class="words-item__svg">
+                          <use href="./assets/icons.svg#play" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="words-item__content">
+                      <div class="words-item__text">
+                        <p>"In quo quaerimus, non emolumento aliquo, sed quia voluptas sit."</p>
+                      </div>
+                      <div class="words-item__caption">
+                        <div class="words-item__author">Leo Knight</div>
+                        <div class="words-item__place">Cleveland</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="words-item">
+                  <a href="#" class="words-item__body">
+                    <div class="words-item__media">
+                      <figure class="words-item__picture">
+                        <img
+                          src="./assets/images/content/words-03.jpg"
+                          srcset="./assets/images/content/words-03@2x.jpg 2x"
+                          alt="Leo Knight"
+                          class="words-item__image"
+                        />
+                      </figure>
+                      <span class="words-item__icon">
+                        <svg width="15px" height="15px" class="words-item__svg">
+                          <use href="./assets/icons.svg#play" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="words-item__content">
+                      <div class="words-item__text">
+                        <p>"Filium morte multavit si sine causa? quae fuerit causa, nollem."</p>
+                      </div>
+                      <div class="words-item__caption">
+                        <div class="words-item__author">Lisanne Viscaal</div>
+                        <div class="words-item__place">Lyon</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <span class="words__icon">
+                <svg width="80px" height="80px">
+                  <use href="/assets/icons.svg#circle" />
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
       </section>

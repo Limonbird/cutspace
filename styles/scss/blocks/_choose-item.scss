@@ -9,13 +9,13 @@
     .choose-item:hover & {
       background-color: $orange;
     }
+  }
 
-    & > svg {
-      fill: $aqua;
+  &__svg {
+    fill: $aqua;
 
-      .choose-item:hover & {
-        fill: $white;
-      }
+    .choose-item:hover & {
+      fill: $white;
     }
   }
 

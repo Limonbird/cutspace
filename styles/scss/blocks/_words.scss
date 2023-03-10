@@ -1,0 +1,41 @@
+.words {
+  &__body {
+    padding: 60px 0;
+  }
+
+  &__header {
+    align-items: center;
+    display: flex;
+    gap: 259px;
+    margin-bottom: 58px;
+  }
+
+  &__title {
+    flex-shrink: 0;
+    margin-bottom: 0;
+    width: 455px;
+  }
+
+  &__subtitle {
+    color: $grey-dark;
+    margin-right: 45px;
+  }
+
+  &__row {
+    position: relative;
+  }
+
+  &__list {
+    @include list-unstyled;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 40px;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+  }
+}
