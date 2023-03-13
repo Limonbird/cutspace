@@ -1,0 +1,18 @@
+.footer-unit {
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    @include list-unstyled;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.93;
+  }
+
+  &__item {
+    & + & {
+      margin-top: 13px;
+    }
+  }
+}

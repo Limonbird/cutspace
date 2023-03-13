@@ -11,27 +11,37 @@
     <header class="header">
       <div class="container">
         <div class="header__body">
-          <div class="header__logo">
+          <div class="logo">
             <svg width="30px" height="30px">
               <title>CutSpace</title>
               <use href="./assets/icons.svg#logo" />
             </svg>
-            <span class="header__title">CutSpace</span>
+            <span class="logo__title">CutSpace</span>
           </div>
-          <nav class="header__nav">
+          <nav>
             <ul class="header__list">
-              <li><a href="#!" class="header__link">Home</a></li>
-              <li><a href="#!" class="header__link header__link--active">About us</a></li>
-              <li><a href="#!" class="header__link">Find space</a></li>
-              <li><a href="#!" class="header__link">Share space</a></li>
-              <li><a href="#!" class="header__link">Promote space</a></li>
+              <li>
+                <a href="#!" class="header__link">Home</a>
+              </li>
+              <li>
+                <a href="#!" class="header__link header__link--active">About us</a>
+              </li>
+              <li>
+                <a href="#!" class="header__link">Find space</a>
+              </li>
+              <li>
+                <a href="#!" class="header__link">Share space</a>
+              </li>
+              <li>
+                <a href="#!" class="header__link">Promote space</a>
+              </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-    <main class="page">
-      <section class="intro page__intro">
+    <main class="main">
+      <section class="intro main__intro">
         <div class="container">
           <div class="intro__body">
             <div class="intro__content">
@@ -41,11 +51,9 @@
               </p>
               <form class="intro-form">
                 <label class="intro-form__label">
-                  <span class="intro-form__icon">
-                    <svg width="24px" height="19px">
-                      <use href="./assets/icons.svg#mail" />
-                    </svg>
-                  </span>
+                  <svg width="24px" height="19px">
+                    <use href="./assets/icons.svg#mail" />
+                  </svg>
                   <input
                     type="email"
                     name="email"
@@ -69,7 +77,7 @@
           </div>
         </div>
       </section>
-      <div class="partners page__partners">
+      <div class="partners main__partners">
         <div class="container">
           <ul class="partners__list">
             <li>
@@ -95,7 +103,7 @@
           </ul>
         </div>
       </div>
-      <section class="provide page__provide">
+      <section class="provide main__provide">
         <div class="container">
           <div class="provide__body">
             <div class="provide__gallery">
@@ -160,7 +168,7 @@
           </div>
         </div>
       </section>
-      <section class="using page__using">
+      <section class="using main__using">
         <div class="container">
           <div class="using__body">
             <figure class="using__picture">
@@ -187,7 +195,7 @@
           </div>
         </div>
       </section>
-      <section class="serve page__serve">
+      <section class="serve main__serve">
         <div class="container">
           <header class="serve__header">
             <h2 class="serve__title">Who do we serve?</h2>
@@ -197,7 +205,7 @@
             <li class="serve-card">
               <div>
                 <svg width="70px" height="70px" class="serve-card__icon">
-                  <use href="./assets/icons.svg#buyer"></use>
+                  <use href="./assets/icons.svg#buyer" />
                 </svg>
                 <h3 class="serve-card__title">Buyers</h3>
                 <p>Torquem detraxit hosti et quidem se texit, ne ad eam.</p>
@@ -207,7 +215,7 @@
             <li class="serve-card">
               <div>
                 <svg width="70px" height="70px" class="serve-card__icon">
-                  <use href="./assets/icons.svg#seller"></use>
+                  <use href="./assets/icons.svg#seller" />
                 </svg>
                 <h3 class="serve-card__title">Seller</h3>
                 <p>Torquem detraxit hosti et quidem se texit, ne ad eam.</p>
@@ -217,7 +225,7 @@
           </ul>
         </div>
       </section>
-      <section class="section choose page__choose">
+      <section class="section choose main__choose">
         <div class="container">
           <h2 class="choose__title">Why choose us?</h2>
           <ul class="choose__list">
@@ -260,7 +268,7 @@
           </ul>
         </div>
       </section>
-      <section class="words page__words">
+      <section class="words main__words">
         <div class="container container--wide">
           <div class="words__body">
             <header class="words__header">
@@ -271,8 +279,8 @@
             </header>
             <div class="words__row">
               <ul class="words__list">
-                <li class="words-item">
-                  <a href="#!" class="words-item__body">
+                <li>
+                  <a href="#!" class="words-item">
                     <div class="words-item__media">
                       <figure class="words-item__picture">
                         <img
@@ -299,8 +307,8 @@
                     </div>
                   </a>
                 </li>
-                <li class="words-item">
-                  <a href="#!" class="words-item__body">
+                <li>
+                  <a href="#!" class="words-item">
                     <div class="words-item__media">
                       <figure class="words-item__picture">
                         <img
@@ -327,8 +335,8 @@
                     </div>
                   </a>
                 </li>
-                <li class="words-item">
-                  <a href="#!" class="words-item__body">
+                <li>
+                  <a href="#!" class="words-item">
                     <div class="words-item__media">
                       <figure class="words-item__picture">
                         <img
@@ -358,14 +366,14 @@
               </ul>
               <span class="words__icon">
                 <svg width="80px" height="80px">
-                  <use href="/assets/icons.svg#circle" />
+                  <use href="./assets/icons.svg#circle" />
                 </svg>
               </span>
             </div>
           </div>
         </div>
       </section>
-      <section class="experience page__experience">
+      <section class="experience main__experience">
         <div class="container">
           <div class="experience__body">
             <div class="experience__content">
@@ -385,6 +393,102 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div>
+            <div class="logo footer__logo">
+              <svg width="30px" height="30px">
+                <title>CutSpace</title>
+                <use href="./assets/icons.svg#logo" />
+              </svg>
+              <span class="logo__title">CutSpace</span>
+            </div>
+            <p>Quae fuerit causa, nollem me ab illo inventore veritatis et.</p>
+            <ul class="footer__social">
+              <li>
+                <a href="#!" class="footer__icon">
+                  <svg width="20px" height="20px">
+                    <use href="./assets/icons.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="footer__icon">
+                  <svg width="24.5px" height="20px">
+                    <use href="./assets/icons.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="footer__icon">
+                  <svg width="28.5px" height="20px">
+                    <use href="./assets/icons.svg#youtube" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="footer__icon">
+                  <svg width="20.9px" height="20px">
+                    <use href="./assets/icons.svg#linkedin" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer__list">
+            <li class="footer-unit">
+              <h5 class="footer-unit__title">Privacy</h5>
+              <ul class="footer-unit__list">
+                <li class="footer-unit__item">
+                  <a href="#!">Si sine causa</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Quae fuerit causa</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Certe, inquam</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Torquatos nostros?</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-unit">
+              <h5 class="footer-unit__title">Legal</h5>
+              <ul class="footer-unit__list">
+                <li class="footer-unit__item">
+                  <a href="#!">Ut placet, inquam</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Certe, inquam</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Et quidem rerum</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">At vero eos et</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer-unit">
+              <h5 class="footer-unit__title">Contact</h5>
+              <ul class="footer-unit__list">
+                <li class="footer-unit__item">
+                  <a href="#!">Primum igitur</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Certe, inquam</a>
+                </li>
+                <li class="footer-unit__item">
+                  <a href="#!">Quae fuerit causa</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script src="./index.js"></script>
   </body>
 </html>

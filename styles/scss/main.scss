@@ -9,12 +9,15 @@
 // components
 @import 'components/container';
 @import 'components/button';
+@import 'components/logo';
 
 // layout
 @import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+@import 'layout/footer-unit';
 
 // blocks
-@import 'blocks/page';
 @import 'blocks/intro';
 @import 'blocks/intro-form';
 @import 'blocks/partners';

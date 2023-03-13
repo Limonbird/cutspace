@@ -1,11 +1,11 @@
 .experience {
   background: url('../../assets/images/bg/slope.svg') no-repeat bottom;
+  background-size: 100%;
 
   &__body {
     align-items: flex-end;
     display: flex;
     gap: 175px;
-    height: 505px;
   }
 
   &__picture {
