@@ -181,6 +181,28 @@ svg {
   transform: scale(1.05);
 }
 
+.main__intro {
+  margin-bottom: 100px;
+}
+.main__partners {
+  margin-bottom: 91px;
+}
+.main__provide {
+  margin-bottom: 154px;
+}
+.main__using {
+  margin-bottom: 144px;
+}
+.main__serve {
+  margin-bottom: 113px;
+}
+.main__choose {
+  margin-bottom: 110px;
+}
+.main__words {
+  margin-bottom: -3px;
+}
+
 .footer__body {
   -moz-column-gap: 218px;
        column-gap: 218px;
@@ -229,28 +251,6 @@ svg {
 }
 .footer-unit__item + .footer-unit__item {
   margin-top: 13px;
-}
-
-.page__intro {
-  margin-bottom: 100px;
-}
-.page__partners {
-  margin-bottom: 91px;
-}
-.page__provide {
-  margin-bottom: 154px;
-}
-.page__using {
-  margin-bottom: 144px;
-}
-.page__serve {
-  margin-bottom: 113px;
-}
-.page__choose {
-  margin-bottom: 110px;
-}
-.page__words {
-  margin-bottom: -3px;
 }
 
 .intro__body {
