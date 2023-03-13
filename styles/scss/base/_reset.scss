@@ -42,6 +42,11 @@ h4 {
   letter-spacing: 0.5px;
 }
 
+h5 {
+  font-size: 21px;
+  letter-spacing: 0.5px;
+}
+
 h6 {
   font-size: inherit;
 }
@@ -60,6 +65,7 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  transition: color $base-duration ease;
 
   &:hover {
     color: $orange;
