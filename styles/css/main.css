@@ -282,8 +282,8 @@ svg {
   align-items: center;
   border-radius: 30px;
   box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
   transition: box-shadow 200ms ease;
   width: 459px;
 }
@@ -291,12 +291,15 @@ svg {
   box-shadow: 0px 17px 42px rgba(247, 132, 52, 0.32);
 }
 .intro-form__label {
+  align-items: center;
+  display: flex;
+  height: 100%;
   padding-left: 28px;
 }
 .intro-form__input {
   border: 0;
   color: #323232;
-  margin-left: 10px;
+  margin-left: 16px;
   max-width: 210px;
 }
 .intro-form__input:focus {
