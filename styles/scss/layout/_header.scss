@@ -1,4 +1,8 @@
 .header {
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+
   &__body {
     align-items: center;
     display: flex;
@@ -69,7 +73,7 @@
   &__nav {
     display: none;
 
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
       .header__checkbox:checked ~ & {
         align-items: center;
         background-color: $white;
@@ -105,7 +109,7 @@
 
   &__item {
     & + & {
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         margin-top: 20px;
       }
     }
@@ -114,6 +118,7 @@
   &__link {
     display: block;
     text-align: center;
+    font-size: 24px;
 
     &:hover {
       transform: scale(1.05);
@@ -126,6 +131,7 @@
 
     @media (min-width: 768px) {
       text-align: initial;
+      font-size: initial;
     }
   }
 }
