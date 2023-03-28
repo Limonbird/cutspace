@@ -1,6 +1,10 @@
 .main {
   &__intro {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 100px;
+    }
   }
 
   &__partners {

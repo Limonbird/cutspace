@@ -289,7 +289,12 @@ svg {
 }
 
 .main__intro {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .main__intro {
+    margin-bottom: 100px;
+  }
 }
 .main__partners {
   margin-bottom: 91px;
@@ -474,9 +479,37 @@ svg {
 .partners__list {
   list-style: none;
   padding: 0;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+}
+@media (min-width: 576px) {
+  .partners__list {
+    align-items: center;
+    display: grid;
+    gap: 30px 60px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+}
+@media (min-width: 1220px) {
+  .partners__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.partners__item {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .partners__item {
+    text-align: initial;
+  }
+}
+.partners__item + .partners__item {
+  margin-top: 30px;
+}
+@media (min-width: 576px) {
+  .partners__item + .partners__item {
+    margin-top: 0;
+  }
 }
 
 .provide__body {
