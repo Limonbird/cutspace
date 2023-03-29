@@ -8,7 +8,11 @@
   }
 
   &__partners {
-    margin-bottom: 91px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 91px;
+    }
   }
 
   &__provide {

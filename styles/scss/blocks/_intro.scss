@@ -24,10 +24,12 @@
 
   &__title {
     margin-bottom: 25px;
+    text-align: center;
 
     @media (min-width: 992px) {
       margin-right: -170px;
       position: relative;
+      text-align: initial;
     }
   }
 

@@ -37,14 +37,14 @@
     padding-left: 28px;
     width: 100%;
 
-    @media (max-width: 991px) {
+    @media (max-width: 991.98px) {
       border-radius: 30px;
       box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
       min-height: 58px;
     }
 
     .intro-form--active & {
-      @media (max-width: 991px) {
+      @media (max-width: 991.98px) {
         box-shadow: 0px 17px 42px rgba($orange, 0.32);
       }
     }
