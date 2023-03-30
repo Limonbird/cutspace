@@ -325,7 +325,12 @@ svg {
   }
 }
 .main__using {
-  margin-bottom: 144px;
+  margin-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .main__using {
+    margin-bottom: 144px;
+  }
 }
 .main__serve {
   margin-bottom: 113px;
@@ -812,13 +817,20 @@ svg {
 }
 .serve:before {
   background-color: #f5f6fa;
-  bottom: 185px;
+  bottom: -30px;
   content: "";
-  height: 704px;
   left: 0;
   position: absolute;
+  top: -30px;
   width: 100%;
   z-index: -1;
+}
+@media (min-width: 992px) {
+  .serve:before {
+    bottom: 185px;
+    height: 704px;
+    top: unset;
+  }
 }
 .serve__header {
   margin-bottom: 45px;
@@ -830,8 +842,17 @@ svg {
 .serve__list {
   list-style: none;
   padding: 0;
-  display: flex;
-  gap: 30px;
+}
+@media (min-width: 992px) {
+  .serve__list {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media (max-width: 991.98px) {
+  .serve__item + .serve__item {
+    margin-top: 20px;
+  }
 }
 
 .serve-card {
@@ -842,9 +863,14 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 88px;
+  padding: 30px 30px;
   text-align: center;
   transition: 200ms ease;
+}
+@media (min-width: 992px) {
+  .serve-card {
+    padding: 40px 88px;
+  }
 }
 .serve-card:hover {
   background-color: #f78434;
@@ -861,12 +887,34 @@ svg {
 .serve-card:hover .serve-card__icon {
   fill: #fff;
 }
+@media (max-width: 991.98px) {
+  .serve-card--orange .serve-card__icon {
+    fill: #fff;
+  }
+}
 .serve-card__button {
   color: #f78434;
   margin-top: 25px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .serve-card__button {
+    width: auto;
+  }
 }
 .serve-card__button:hover {
   outline: 1px solid #fff;
+}
+@media (max-width: 991.98px) {
+  .serve-card--white .serve-card__button {
+    outline: 1px solid #f78434;
+  }
+}
+@media (max-width: 991.98px) {
+  .serve-card--orange {
+    background-color: #f78434;
+    color: #fff;
+  }
 }
 
 .choose__title {

@@ -24,7 +24,11 @@
   }
 
   &__using {
-    margin-bottom: 144px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 144px;
+    }
   }
 
   &__serve {
