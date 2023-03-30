@@ -333,7 +333,12 @@ svg {
   }
 }
 .main__serve {
-  margin-bottom: 113px;
+  margin-bottom: 90px;
+}
+@media (min-width: 992px) {
+  .main__serve {
+    margin-bottom: 113px;
+  }
 }
 .main__choose {
   margin-bottom: 110px;
@@ -924,8 +929,24 @@ svg {
 .choose__list {
   list-style: none;
   padding: 0;
-  display: flex;
-  gap: 35px;
+}
+@media (min-width: 576px) {
+  .choose__list {
+    display: grid;
+    gap: 60px 35px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  .choose__list {
+    display: flex;
+    gap: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .choose__item + .choose__item {
+    margin-top: 60px;
+  }
 }
 
 .choose-item {
@@ -940,19 +961,17 @@ svg {
   justify-content: center;
   width: 70px;
   margin: 0 auto 15px;
-  transition: 200ms ease;
-}
-.choose-item:hover .choose-item__icon {
-  background-color: #f78434;
 }
 .choose-item__svg {
   fill: #58bebf;
 }
-.choose-item:hover .choose-item__svg {
-  fill: #fff;
-}
 .choose-item__title {
   margin-bottom: 2px;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .choose-item__title {
+    font-size: 24px;
+  }
 }
 
 .words__body {

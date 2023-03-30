@@ -32,7 +32,11 @@
   }
 
   &__serve {
-    margin-bottom: 113px;
+    margin-bottom: 90px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 113px;
+    }
   }
 
   &__choose {
