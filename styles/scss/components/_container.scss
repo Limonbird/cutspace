@@ -14,6 +14,8 @@
   }
 
   &--wide {
-    max-width: 1150px;
+    @media (min-width: 1220px) {
+      max-width: 1150px;
+    }
   }
 }

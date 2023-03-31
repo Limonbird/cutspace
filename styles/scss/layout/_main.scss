@@ -40,7 +40,11 @@
   }
 
   &__choose {
-    margin-bottom: 110px;
+    margin-bottom: 60px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 110px;
+    }
   }
 
   &__words {
