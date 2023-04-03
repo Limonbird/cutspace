@@ -24,12 +24,18 @@
     flex-direction: column;
     height: 26px;
     justify-content: space-between;
+    margin: -15px;
     padding: 15px;
     position: absolute;
-    right: 10px;
-    top: 29px;
+    right: 0;
+    top: 45px;
     width: 33px;
     z-index: 999;
+
+    .header__checkbox:checked ~ & {
+      position: fixed;
+      right: 15px;
+    }
 
     @media (min-width: 768px) {
       display: none;
