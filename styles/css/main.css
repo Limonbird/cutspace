@@ -177,6 +177,10 @@ svg {
   margin-left: 12px;
 }
 
+.body--menu-opened {
+  overflow: hidden;
+}
+
 @media (max-width: 991.98px) {
   .header {
     margin-bottom: 40px;
