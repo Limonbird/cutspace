@@ -17,15 +17,17 @@ introElementList.forEach((item) => {
 });
 // end
 
-// бургер-меню для мобайла: скрывается при клику по ссылке, резайзу до десктопа
-const headerCheckbox = document.querySelector('.header__checkbox');
-const headerLinkList = document.querySelectorAll('.header__link');
+/*
+бургер-меню для мобайла
+запрет скролла body при открытом меню
+меню открывается при клике на кнопку, закрывается при клике на кнопку, клику по ссылке (это может быть якорь), резайзу окна
+*/
 const siteBody = document.querySelector('body');
+const headerLinkList = document.querySelectorAll('.header__link');
+const menuButton = document.querySelector('.header__toggler');
 
 const closeMenu = () => {
-  headerCheckbox.checked = false;
-  const changeEvent = new Event('change');
-  headerCheckbox.dispatchEvent(changeEvent);
+  siteBody.classList.remove('body--menu-opened');
 };
 
 const addMenuClose = () => {
@@ -40,24 +42,18 @@ const removeMenuClose = () => {
   });
 };
 
-headerCheckbox.addEventListener('change', (event) => {
-  if (event.target.checked) {
-    siteBody.classList.add('body--menu-opened');
-    addMenuClose();
-  } else {
-    siteBody.classList.remove('body--menu-opened');
-    removeMenuClose();
-  }
+menuButton.addEventListener('click', () => {
+  siteBody.classList.toggle('body--menu-opened') ? addMenuClose() : removeMenuClose();
 });
 
-const debounceForMenu = (func, delay = 250) => {
+const debounceForMenu = (callback, delay = 250) => {
   let timeout;
 
   return () => {
     clearTimeout(timeout);
     timeout = setTimeout(() => {
-      if (window.innerWidth >= 992 && headerCheckbox.checked) {
-        func();
+      if (window.innerWidth >= 992) {
+        callback();
       }
     }, delay);
   };

@@ -13,11 +13,9 @@
     position: relative;
   }
 
-  &__checkbox {
-    display: none;
-  }
-
   &__toggler {
+    background-color: transparent;
+    border: transparent;
     box-sizing: content-box;
     cursor: pointer;
     display: flex;
@@ -32,7 +30,7 @@
     width: 33px;
     z-index: 999;
 
-    .header__checkbox:checked ~ & {
+    .body--menu-opened & {
       position: fixed;
       right: 15px;
     }
@@ -53,7 +51,7 @@
       transform-origin: 0% 0%;
       transition: transform 0.4s ease-in-out;
 
-      .header__checkbox:checked ~ .header__toggler & {
+      .body--menu-opened & {
         transform: rotate(45deg);
       }
     }
@@ -61,7 +59,7 @@
     &--2 {
       transition: transform 0.2s ease-in-out;
 
-      .header__checkbox:checked ~ .header__toggler & {
+      .body--menu-opened & {
         transform: scaleY(0);
       }
     }
@@ -70,7 +68,7 @@
       transform-origin: 0% 100%;
       transition: transform 0.4s ease-in-out;
 
-      .header__checkbox:checked ~ .header__toggler & {
+      .body--menu-opened & {
         transform: rotate(-45deg);
       }
     }
@@ -80,7 +78,7 @@
     display: none;
 
     @media (max-width: 767.98px) {
-      .header__checkbox:checked ~ & {
+      .body--menu-opened & {
         align-items: center;
         background-color: $white;
         bottom: 0;

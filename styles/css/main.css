@@ -195,10 +195,9 @@ svg {
   padding-top: 37px;
   position: relative;
 }
-.header__checkbox {
-  display: none;
-}
 .header__toggler {
+  background-color: transparent;
+  border: transparent;
   box-sizing: content-box;
   cursor: pointer;
   display: flex;
@@ -213,7 +212,7 @@ svg {
   width: 33px;
   z-index: 999;
 }
-.header__checkbox:checked ~ .header__toggler {
+.body--menu-opened .header__toggler {
   position: fixed;
   right: 15px;
 }
@@ -233,27 +232,27 @@ svg {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-.header__checkbox:checked ~ .header__toggler .header__line--1 {
+.body--menu-opened .header__line--1 {
   transform: rotate(45deg);
 }
 .header__line--2 {
   transition: transform 0.2s ease-in-out;
 }
-.header__checkbox:checked ~ .header__toggler .header__line--2 {
+.body--menu-opened .header__line--2 {
   transform: scaleY(0);
 }
 .header__line--3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
-.header__checkbox:checked ~ .header__toggler .header__line--3 {
+.body--menu-opened .header__line--3 {
   transform: rotate(-45deg);
 }
 .header__nav {
   display: none;
 }
 @media (max-width: 767.98px) {
-  .header__checkbox:checked ~ .header__nav {
+  .body--menu-opened .header__nav {
     align-items: center;
     background-color: #fff;
     bottom: 0;
