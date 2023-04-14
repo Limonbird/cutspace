@@ -1,5 +1,6 @@
 .experience {
   position: relative;
+  overflow: hidden;
 
   &::before {
     background-color: $aqua;

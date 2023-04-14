@@ -1,10 +1,18 @@
 .footer {
   &__body {
-    column-gap: 218px;
-    display: grid;
-    grid-template-columns: 306px 1fr;
-    padding-bottom: 82px;
-    padding-top: 89px;
+    padding-bottom: 40px;
+
+    @media (min-width: 992px) {
+      column-gap: 70px;
+      display: grid;
+      grid-template-columns: 306px 1fr;
+      padding-bottom: 82px;
+      padding-top: 89px;
+    }
+
+    @media (min-width: 1220px) {
+      column-gap: 218px;
+    }
   }
 
   &__logo {
@@ -16,7 +24,11 @@
     @include list-unstyled;
     display: flex;
     gap: 30px;
-    margin-top: 36px;
+    margin-top: 20px;
+
+    @media (min-width: 992px) {
+      margin-top: 36px;
+    }
   }
 
   &__icon {
@@ -31,9 +43,25 @@
 
   &__list {
     @include list-unstyled;
-    display: flex;
-    gap: 85px;
-    justify-content: space-between;
-    margin-top: 8px;
+    margin-top: 40px;
+
+    @media (min-width: 576px) {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 992px) {
+      gap: 85px;
+      margin-top: 8px;
+    }
+  }
+
+  &__unit {
+    & + & {
+      @media (max-width: 575.98px) {
+        margin-top: 20px;
+      }
+    }
   }
 }

@@ -310,6 +310,11 @@ svg {
   }
 }
 
+@media (max-width: 991.98px) {
+  .main {
+    margin-bottom: 60px;
+  }
+}
 .main__intro {
   margin-bottom: 60px;
 }
@@ -368,12 +373,23 @@ svg {
 }
 
 .footer__body {
-  -moz-column-gap: 218px;
-       column-gap: 218px;
-  display: grid;
-  grid-template-columns: 306px 1fr;
-  padding-bottom: 82px;
-  padding-top: 89px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .footer__body {
+    -moz-column-gap: 70px;
+         column-gap: 70px;
+    display: grid;
+    grid-template-columns: 306px 1fr;
+    padding-bottom: 82px;
+    padding-top: 89px;
+  }
+}
+@media (min-width: 1220px) {
+  .footer__body {
+    -moz-column-gap: 218px;
+         column-gap: 218px;
+  }
 }
 .footer__logo {
   letter-spacing: normal;
@@ -384,7 +400,12 @@ svg {
   padding: 0;
   display: flex;
   gap: 30px;
-  margin-top: 36px;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .footer__social {
+    margin-top: 36px;
+  }
 }
 .footer__icon {
   display: block;
@@ -397,13 +418,39 @@ svg {
 .footer__list {
   list-style: none;
   padding: 0;
-  display: flex;
-  gap: 85px;
-  justify-content: space-between;
-  margin-top: 8px;
+  margin-top: 40px;
+}
+@media (min-width: 576px) {
+  .footer__list {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 992px) {
+  .footer__list {
+    gap: 85px;
+    margin-top: 8px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer__unit + .footer__unit {
+    margin-top: 20px;
+  }
 }
 
 .footer-unit__title {
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: margin 750ms ease;
+}
+@media (min-width: 576px) {
+  .footer-unit__title {
+    margin-bottom: 18px;
+    transition: none;
+  }
+}
+.footer-unit--expanded .footer-unit__title {
   margin-bottom: 18px;
 }
 .footer-unit__list {
@@ -412,6 +459,13 @@ svg {
   font-size: 14px;
   letter-spacing: 0.5px;
   line-height: 1.93;
+}
+@media (max-width: 575.98px) {
+  .footer-unit__list {
+    height: 0px;
+    overflow: hidden;
+    transition: height 750ms ease;
+  }
 }
 .footer-unit__item + .footer-unit__item {
   margin-top: 13px;
@@ -1174,6 +1228,7 @@ svg {
 
 .experience {
   position: relative;
+  overflow: hidden;
 }
 .experience::before {
   background-color: #58bebf;
