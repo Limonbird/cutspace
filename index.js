@@ -22,12 +22,12 @@ introElementList.forEach((item) => {
 запрет скролла body при открытом меню
 меню открывается при клике на кнопку, закрывается при клике на кнопку, клику по ссылке (это может быть якорь)
 */
-const siteBody = document.querySelector('body');
+const siteBody = document.querySelector('.site');
 const headerLinkList = document.querySelectorAll('.header__link');
 const menuButton = document.querySelector('.header__toggler');
 
 const closeMenu = () => {
-  siteBody.classList.remove('body--menu-opened');
+  siteBody.classList.remove('site--menu-opened');
 };
 
 const addMenuClose = () => {
@@ -43,7 +43,7 @@ const removeMenuClose = () => {
 };
 
 menuButton.addEventListener('click', () => {
-  siteBody.classList.toggle('body--menu-opened') ? addMenuClose() : removeMenuClose();
+  siteBody.classList.toggle('site--menu-opened') ? addMenuClose() : removeMenuClose();
 });
 // end
 

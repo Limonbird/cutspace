@@ -22,6 +22,7 @@ body {
   letter-spacing: 1.15px;
   line-height: 1.69;
   margin: 0;
+  min-width: 320px;
 }
 
 h1,
@@ -177,15 +178,20 @@ svg {
   margin-left: 12px;
 }
 
-.body--menu-opened {
+.site--menu-opened {
   overflow: hidden;
 }
-
 @media (max-width: 991.98px) {
-  .header {
+  .site__header {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 991.98px) {
+  .site__page {
+    margin-bottom: 60px;
+  }
+}
+
 .header__body {
   align-items: center;
   display: flex;
@@ -212,7 +218,7 @@ svg {
   width: 33px;
   z-index: 999;
 }
-.body--menu-opened .header__toggler {
+.site--menu-opened .header__toggler {
   position: fixed;
   right: 15px;
 }
@@ -232,27 +238,27 @@ svg {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
-.body--menu-opened .header__line--1 {
+.site--menu-opened .header__line--1 {
   transform: rotate(45deg);
 }
 .header__line--2 {
   transition: transform 0.2s ease-in-out;
 }
-.body--menu-opened .header__line--2 {
+.site--menu-opened .header__line--2 {
   transform: scaleY(0);
 }
 .header__line--3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
-.body--menu-opened .header__line--3 {
+.site--menu-opened .header__line--3 {
   transform: rotate(-45deg);
 }
 .header__nav {
   display: none;
 }
 @media (max-width: 767.98px) {
-  .body--menu-opened .header__nav {
+  .site--menu-opened .header__nav {
     align-items: center;
     background-color: #fff;
     bottom: 0;
@@ -310,64 +316,59 @@ svg {
   }
 }
 
-@media (max-width: 991.98px) {
-  .main {
-    margin-bottom: 60px;
-  }
-}
-.main__intro {
+.page__intro {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .main__intro {
+  .page__intro {
     margin-bottom: 100px;
   }
 }
-.main__partners {
+.page__partners {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .main__partners {
+  .page__partners {
     margin-bottom: 91px;
   }
 }
-.main__provide {
+.page__provide {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .main__provide {
+  .page__provide {
     margin-bottom: 154px;
   }
 }
-.main__using {
+.page__using {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .main__using {
+  .page__using {
     margin-bottom: 144px;
   }
 }
-.main__serve {
+.page__serve {
   margin-bottom: 90px;
 }
 @media (min-width: 992px) {
-  .main__serve {
+  .page__serve {
     margin-bottom: 113px;
   }
 }
-.main__choose {
+.page__choose {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .main__choose {
+  .page__choose {
     margin-bottom: 110px;
   }
 }
-.main__words {
+.page__words {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .main__words {
+  .page__words {
     margin-bottom: -3px;
   }
 }
