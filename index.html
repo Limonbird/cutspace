@@ -14,8 +14,8 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="styles/css/main.css" />
   </head>
-  <body>
-    <header class="header">
+  <body class="site">
+    <header class="header site__header">
       <div class="container">
         <div class="header__body">
           <div class="logo">
@@ -25,34 +25,39 @@
             </svg>
             <span class="logo__title">CutSpace</span>
           </div>
-          <nav>
+          <nav class="header__nav">
             <ul class="header__list">
-              <li>
+              <li class="header__item">
                 <a href="#!" class="header__link">Home</a>
               </li>
-              <li>
+              <li class="header__item">
                 <a href="#!" class="header__link header__link--active">About us</a>
               </li>
-              <li>
+              <li class="header__item">
                 <a href="#!" class="header__link">Find space</a>
               </li>
-              <li>
+              <li class="header__item">
                 <a href="#!" class="header__link">Share space</a>
               </li>
-              <li>
+              <li class="header__item">
                 <a href="#!" class="header__link">Promote space</a>
               </li>
             </ul>
           </nav>
+          <button type="button" class="header__toggler">
+            <span class="header__line header__line--1"></span>
+            <span class="header__line header__line--2"></span>
+            <span class="header__line header__line--3"></span>
+          </button>
         </div>
       </div>
     </header>
-    <main class="main">
-      <section class="intro main__intro">
+    <main class="page site__page">
+      <section class="intro page__intro">
         <div class="container">
           <div class="intro__body">
             <div class="intro__content">
-              <h1 class="intro__title">Find your custom matched commercial real estate space.</h1>
+              <h1 class="intro__title">Find your custom matched commercial real estate space</h1>
               <p class="intro__subtitle">
                 In oculis quidem exercitus quid ex ea consequatur? autem vel eum fugiat, quo pertineant ero tibique
               </p>
@@ -72,37 +77,33 @@
                 <button type="submit" class="button button--accented intro-form__button">Subscribe</button>
               </form>
             </div>
-
-            <figure class="intro__picture">
-              <img
-                src="./assets/images/content/intro.jpg"
-                srcset="./assets/images/content/intro@2x.jpg 2x"
-                alt="Intro image"
-                class="intro__image"
-              />
-            </figure>
+            <picture class="intro__picture">
+              <source media="(max-width: 991.98px)" srcset="./assets/images/none.png" />
+              <source srcset="./assets/images/content/intro.jpg 1x, ./assets/images/content/intro@2x.jpg 2x" />
+              <img src="./assets/images/content/intro.jpg" alt="Real estate photo" class="intro__image" />
+            </picture>
           </div>
         </div>
       </section>
-      <div class="partners main__partners">
+      <div class="partners page__partners">
         <div class="container">
           <ul class="partners__list">
-            <li>
+            <li class="partners__item">
               <svg width="217px" height="42px">
                 <use href="./assets/icons.svg#partner_1" />
               </svg>
             </li>
-            <li>
+            <li class="partners__item">
               <svg width="190px" height="34px">
                 <use href="./assets/icons.svg#partner_2" />
               </svg>
             </li>
-            <li>
+            <li class="partners__item">
               <svg width="230px" height="42px">
                 <use href="./assets/icons.svg#partner_3" />
               </svg>
             </li>
-            <li>
+            <li class="partners__item">
               <svg width="188px" height="38px">
                 <use href="./assets/icons.svg#partner_4" />
               </svg>
@@ -110,19 +111,19 @@
           </ul>
         </div>
       </div>
-      <section class="provide main__provide">
+      <section class="provide page__provide">
         <div class="container">
           <div class="provide__body">
+            <h2 class="provide__title">We provide best space for you!</h2>
+
             <div class="provide__gallery">
-              <div class="provide__card">
-                <figure class="provide__picture">
-                  <img
-                    src="./assets/images/content/provide-01.jpg"
-                    srcset="./assets/images/content/provide-01@2x.jpg 2x"
-                    alt="Provide picture"
-                    class="provide__image"
+              <div class="provide__card provide__card--half">
+                <picture class="provide__picture">
+                  <source
+                    srcset="./assets/images/content/provide-01.jpg 1x, ./assets/images/content/provide-01@2x.jpg 2x"
                   />
-                </figure>
+                  <img src="./assets/images/content/provide-01.jpg" alt="Best space" class="provide__image" />
+                </picture>
                 <div class="provide__hint">
                   <div class="provide-hint">
                     <div class="provide-hint__icon">
@@ -139,14 +140,12 @@
                 </div>
               </div>
               <div class="provide__card">
-                <figure class="provide__picture provide__picture--sharp">
-                  <img
-                    src="./assets/images/content/provide-02.jpg"
-                    srcset="./assets/images/content/provide-02@2x.jpg 2x"
-                    alt="Provide picture"
-                    class="provide__image"
+                <picture class="provide__picture provide__picture--sharp">
+                  <source
+                    srcset="./assets/images/content/provide-02.jpg 1x, ./assets/images/content/provide-02@2x.jpg 2x"
                   />
-                </figure>
+                  <img src="./assets/images/content/provide-02.jpg" alt="Best choice" class="provide__image" />
+                </picture>
                 <div class="provide__hint">
                   <div class="provide-hint">
                     <div class="provide-hint__icon">
@@ -164,7 +163,6 @@
               </div>
             </div>
             <div class="provide__content">
-              <h2 class="provide__title">We provide best space for you!</h2>
               <p>
                 Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex ea quid est et via procedat oratio
                 quaerimus.
@@ -175,24 +173,21 @@
           </div>
         </div>
       </section>
-      <section class="using main__using">
+      <section class="using page__using">
         <div class="container">
           <div class="using__body">
-            <figure class="using__picture">
-              <img
-                src="./assets/images/content/using.jpg"
-                srcset="./assets/images/content/using@2x.jpg 2x"
-                alt="Using image"
-              />
-            </figure>
+            <picture class="using__picture">
+              <source media="(max-width: 991.98px)" srcset="./assets/images/none.png" />
+              <source srcset="./assets/images/content/using.jpg 1x, ./assets/images/content/using@2x.jpg 2x" />
+              <img src="./assets/images/content/using.jpg" alt="" class="using__image" />
+            </picture>
             <div class="using__content">
               <h2 class="using__title">Start using our product</h2>
               <p>Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex</p>
-
               <div class="using__action">
-                <a href="#!" class="button button--accented">Contact Us</a>
-                <button class="button using__play-button">
-                  <svg width="12px" height="12px" class="using__play-icon">
+                <a href="#!" class="button button--accented using__button">Contact Us</a>
+                <button class="button using__button using__button--play">
+                  <svg width="12px" height="12px" class="using__icon">
                     <use href="./assets/icons.svg#play" />
                   </svg>
                   <span>Watch now</span>
@@ -202,14 +197,14 @@
           </div>
         </div>
       </section>
-      <section class="serve main__serve">
+      <section class="serve page__serve">
         <div class="container">
           <header class="serve__header">
             <h2 class="serve__title">Who do we serve?</h2>
             <p>Every buyer and seller of tech and services in the world.</p>
           </header>
           <ul class="serve__list">
-            <li class="serve-card">
+            <li class="serve-card serve-card--orange serve__item">
               <div>
                 <svg width="70px" height="70px" class="serve-card__icon">
                   <use href="./assets/icons.svg#buyer" />
@@ -219,7 +214,7 @@
               </div>
               <a href="#!" class="button serve-card__button">Get Started</a>
             </li>
-            <li class="serve-card">
+            <li class="serve-card serve-card--white serve__item">
               <div>
                 <svg width="70px" height="70px" class="serve-card__icon">
                   <use href="./assets/icons.svg#seller" />
@@ -232,11 +227,11 @@
           </ul>
         </div>
       </section>
-      <section class="section choose main__choose">
+      <section class="choose page__choose">
         <div class="container">
           <h2 class="choose__title">Why choose us?</h2>
           <ul class="choose__list">
-            <li class="choose-item">
+            <li class="choose-item choose__item">
               <div class="choose-item__icon">
                 <svg width="39px" height="30px" class="choose-item__svg">
                   <use href="./assets/icons.svg#performance" />
@@ -245,7 +240,7 @@
               <h4 class="choose-item__title">Performance</h4>
               <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
             </li>
-            <li class="choose-item">
+            <li class="choose-item choose__item">
               <div class="choose-item__icon">
                 <svg width="22.5px" height="30px" class="choose-item__svg">
                   <use href="./assets/icons.svg#entrepreneurship" />
@@ -254,7 +249,7 @@
               <h4 class="choose-item__title">Entrepreneurship</h4>
               <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
             </li>
-            <li class="choose-item">
+            <li class="choose-item choose__item">
               <div class="choose-item__icon">
                 <svg width="21.8px" height="26.5px" class="choose-item__svg">
                   <use href="./assets/icons.svg#authenticity" />
@@ -263,7 +258,7 @@
               <h4 class="choose-item__title">Authenticity</h4>
               <p>Torquem detraxit hosti et quidem se texit, ne ad.</p>
             </li>
-            <li class="choose-item">
+            <li class="choose-item choose__item">
               <div class="choose-item__icon">
                 <svg width="36.5px" height="30px" class="choose-item__svg">
                   <use href="./assets/icons.svg#kindness" />
@@ -275,7 +270,7 @@
           </ul>
         </div>
       </section>
-      <section class="words main__words">
+      <section class="words page__words">
         <div class="container container--wide">
           <div class="words__body">
             <header class="words__header">
@@ -286,17 +281,19 @@
             </header>
             <div class="words__row">
               <ul class="words__list">
-                <li>
+                <li class="words__item">
                   <a href="#!" class="words-item">
                     <div class="words-item__media">
-                      <figure class="words-item__picture">
+                      <picture class="words-item__picture">
+                        <source
+                          srcset="./assets/images/content/words-01.jpg 1x, ./assets/images/content/words-01@2x.jpg 2x"
+                        />
                         <img
                           src="./assets/images/content/words-01.jpg"
-                          srcset="./assets/images/content/words-01@2x.jpg 2x"
                           alt="Arend Pellewever"
                           class="words-item__image"
                         />
-                      </figure>
+                      </picture>
                       <span class="words-item__icon">
                         <svg width="15px" height="15px" class="words-item__svg">
                           <use href="./assets/icons.svg#play" />
@@ -314,17 +311,19 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li class="words__item">
                   <a href="#!" class="words-item">
                     <div class="words-item__media">
-                      <figure class="words-item__picture">
+                      <picture class="words-item__picture">
+                        <source
+                          srcset="./assets/images/content/words-02.jpg 1x, ./assets/images/content/words-02@2x.jpg 2x"
+                        />
                         <img
                           src="./assets/images/content/words-02.jpg"
-                          srcset="./assets/images/content/words-02@2x.jpg 2x"
                           alt="Lisanne Viscaal"
                           class="words-item__image"
                         />
-                      </figure>
+                      </picture>
                       <span class="words-item__icon">
                         <svg width="15px" height="15px" class="words-item__svg">
                           <use href="./assets/icons.svg#play" />
@@ -342,17 +341,15 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li class="words__item">
                   <a href="#!" class="words-item">
                     <div class="words-item__media">
-                      <figure class="words-item__picture">
-                        <img
-                          src="./assets/images/content/words-03.jpg"
-                          srcset="./assets/images/content/words-03@2x.jpg 2x"
-                          alt="Leo Knight"
-                          class="words-item__image"
+                      <picture class="words-item__picture">
+                        <source
+                          srcset="./assets/images/content/words-03.jpg 1x, ./assets/images/content/words-03@2x.jpg 2x"
                         />
-                      </figure>
+                        <img src="./assets/images/content/words-03.jpg" alt="Leo Knight" class="words-item__image" />
+                      </picture>
                       <span class="words-item__icon">
                         <svg width="15px" height="15px" class="words-item__svg">
                           <use href="./assets/icons.svg#play" />
@@ -380,7 +377,7 @@
           </div>
         </div>
       </section>
-      <section class="experience main__experience">
+      <section class="experience page__experience">
         <div class="container">
           <div class="experience__body">
             <div class="experience__content">
@@ -388,14 +385,15 @@
               <p>Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex</p>
               <a href="#!" class="button button--blue experience__button">Contact Us</a>
             </div>
-            <figure class="experience__picture">
-              <img
-                src="./assets/images/content/expert.png"
-                srcset="./assets/images/content/expert@2x.png 2x"
-                alt="Expert"
-                class="experience__image"
+            <picture class="experience__picture">
+              <source media="(max-width: 991.98px)" srcset="./assets/images/none.png" />
+              <source
+                media="(max-width: 1219.98px)"
+                srcset="./assets/images/content/expert-lg.png 1x, ./assets/images/content/expert-lg@2x.png 2x"
               />
-            </figure>
+              <source srcset="./assets/images/content/expert-xl.png 1x, ./assets/images/content/expert-xl@2x.png 2x" />
+              <img src="./assets/images/content/expert-lg.png" alt="Expert" class="experience__image" />
+            </picture>
           </div>
         </div>
       </section>
@@ -444,7 +442,7 @@
             </ul>
           </div>
           <ul class="footer__list">
-            <li class="footer-unit">
+            <li class="footer-unit footer__unit">
               <h5 class="footer-unit__title">Privacy</h5>
               <ul class="footer-unit__list">
                 <li class="footer-unit__item">
@@ -461,7 +459,7 @@
                 </li>
               </ul>
             </li>
-            <li class="footer-unit">
+            <li class="footer-unit footer__unit">
               <h5 class="footer-unit__title">Legal</h5>
               <ul class="footer-unit__list">
                 <li class="footer-unit__item">
@@ -478,7 +476,7 @@
                 </li>
               </ul>
             </li>
-            <li class="footer-unit">
+            <li class="footer-unit footer__unit">
               <h5 class="footer-unit__title">Contact</h5>
               <ul class="footer-unit__list">
                 <li class="footer-unit__item">
