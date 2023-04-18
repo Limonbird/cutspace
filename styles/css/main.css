@@ -109,6 +109,10 @@ svg {
   vertical-align: middle;
 }
 
+picture {
+  display: block;
+}
+
 .container {
   padding: 0 15px;
   width: 100%;
@@ -677,8 +681,10 @@ svg {
   border-radius: 20px;
   overflow: hidden;
 }
-.provide__picture--sharp {
-  border-bottom-right-radius: 0;
+@media (min-width: 992px) {
+  .provide__picture--sharp {
+    border-bottom-right-radius: 0;
+  }
 }
 .provide__image {
   max-width: 100%;
@@ -801,7 +807,7 @@ svg {
 
 .using__body {
   background: url("../../assets/images/bg/circle-group.svg") no-repeat top right, #58bebf;
-  background-size: 40%;
+  background-size: 175px auto;
   border-radius: 20px;
   overflow: hidden;
   padding: 20px 20px;
@@ -809,13 +815,13 @@ svg {
 }
 @media (min-width: 576px) {
   .using__body {
-    background-size: 20%;
+    background-size: 150px auto;
   }
 }
 @media (min-width: 992px) {
   .using__body {
     background: url("../../assets/images/bg/circle-group.svg") no-repeat top right, url("../../assets/images/bg/quarter.svg") no-repeat 46% 100%, #58bebf;
-    background-size: unset;
+    background-size: 225px auto, 304px auto;
     padding: 91px 95px;
   }
 }
@@ -1271,7 +1277,7 @@ svg {
 @media (min-width: 992px) {
   .experience__picture {
     display: block;
-    max-height: 382px;
+    max-height: 383px;
     max-width: 335px;
     position: relative;
   }

@@ -54,7 +54,9 @@
     overflow: hidden;
 
     &--sharp {
-      border-bottom-right-radius: 0;
+      @media (min-width: 992px) {
+        border-bottom-right-radius: 0;
+      }
     }
   }
 
