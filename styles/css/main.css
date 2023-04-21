@@ -451,6 +451,7 @@ picture {
 }
 @media (min-width: 576px) {
   .footer-unit__title {
+    cursor: auto;
     margin-bottom: 18px;
     transition: none;
   }

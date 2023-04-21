@@ -7,6 +7,7 @@ $footer-transition: 750ms;
     transition: margin $footer-transition ease;
 
     @media (min-width: 576px) {
+      cursor: auto;
       margin-bottom: 18px;
       transition: none;
     }
