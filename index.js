@@ -19,7 +19,7 @@ introElementList.forEach((item) => {
 
 // открыть | закрыть бургер меню в мобайле
 const siteBody = document.querySelector('.site');
-const menuButton = document.querySelector('.header__toggler');
+const menuButton = document.querySelector('.header__burger');
 
 menuButton.addEventListener('click', () => {
   siteBody.classList.toggle('site--menu-opened');
@@ -83,8 +83,33 @@ const removeFooterStyles = () => {
 };
 // end
 
-// обработка события resize
-// при переходе в десктоп - закрыть бургер меню и развернуть списки ссылок в футере
+// показывать кнопку бургер меню поверх конента, если отскроллили вниз
+const siteHeader = document.querySelector('.header');
+
+const removeBurgerOntop = () => {
+  menuButton.classList.remove('header__burger--ontop');
+};
+
+const highlightBurger = () => {
+  if (window.scrollY === 0) {
+    removeBurgerOntop();
+  } else {
+    menuButton.classList.add('header__burger--ontop');
+  }
+};
+
+const burgerObserver = new IntersectionObserver(highlightBurger, {
+  threshold: [1],
+});
+
+burgerObserver.observe(siteHeader);
+// end
+
+/*
+обработка события resize
+при переходе в десктоп - закрыть бургер меню и развернуть списки ссылок в футере
+при переходе в мобайл - если находимся наверху страницы - убрать для кнопки меню оформление поверх конента
+*/
 const debounce = (callback, delay = 250) => {
   let timeout;
 
@@ -103,6 +128,12 @@ const handleResize = () => {
 
   if (window.innerWidth >= 576) {
     removeFooterStyles();
+  }
+
+  if (window.innerWidth < 768) {
+    if (window.scrollY === 0) {
+      removeBurgerOntop();
+    }
   }
 };
 
