@@ -13,8 +13,13 @@
     left: 0;
     position: absolute;
     right: 0;
-    top: 110px;
+    top: 0;
+
     z-index: -1;
+
+    @media (min-width: 768px) {
+      top: 110px;
+    }
 
     @media (min-width: 992px) {
       clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
