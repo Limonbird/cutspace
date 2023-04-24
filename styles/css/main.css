@@ -516,6 +516,13 @@ picture {
   margin-top: 13px;
 }
 
+@media (min-width: 768px) {
+  .intro {
+    padding-top: 110px;
+    margin-top: -110px;
+    background-clip: content-box;
+  }
+}
 @media (min-width: 992px) {
   .intro__body {
     display: grid;
@@ -845,6 +852,13 @@ picture {
   }
 }
 
+@media (min-width: 768px) {
+  .using {
+    padding-top: 110px;
+    margin-top: -110px;
+    background-clip: content-box;
+  }
+}
 .using__body {
   background: url("../../assets/images/bg/circle-group.svg") no-repeat top right, #58bebf;
   background-size: 175px auto;
@@ -1043,6 +1057,13 @@ picture {
   }
 }
 
+@media (min-width: 768px) {
+  .choose {
+    padding-top: 110px;
+    margin-top: -110px;
+    background-clip: content-box;
+  }
+}
 .choose__title {
   margin-bottom: 58px;
   text-align: center;
@@ -1095,6 +1116,13 @@ picture {
   }
 }
 
+@media (min-width: 768px) {
+  .words {
+    padding-top: 110px;
+    margin-top: -110px;
+    background-clip: content-box;
+  }
+}
 @media (min-width: 992px) {
   .words__body {
     padding: 60px 0 42px 0;
@@ -1277,6 +1305,13 @@ picture {
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 768px) {
+  .experience {
+    padding-top: 110px;
+    margin-top: -110px;
+    background-clip: content-box;
+  }
+}
 .experience::before {
   background-color: #58bebf;
   bottom: 0;
@@ -1284,7 +1319,7 @@ picture {
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 110px;
   z-index: -1;
 }
 @media (min-width: 992px) {

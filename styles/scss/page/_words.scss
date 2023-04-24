@@ -1,4 +1,8 @@
 .words {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
   &__body {
     @media (min-width: 992px) {
       padding: 60px 0 42px 0;

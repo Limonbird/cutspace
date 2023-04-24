@@ -1,4 +1,8 @@
 .using {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
   &__body {
     background: url('../../assets/images/bg/circle-group.svg') no-repeat top right, $aqua;
     background-size: 175px auto;

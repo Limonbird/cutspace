@@ -1,4 +1,8 @@
 .intro {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
   &__body {
     @media (min-width: 992px) {
       display: grid;

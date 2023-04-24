@@ -1,4 +1,8 @@
 .choose {
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
   &__title {
     margin-bottom: 58px;
     text-align: center;

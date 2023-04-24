@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
 
+  @media (min-width: 768px) {
+    @include anchor-margin;
+  }
+
   &::before {
     background-color: $aqua;
     bottom: 0;
@@ -9,7 +13,7 @@
     left: 0;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 110px;
     z-index: -1;
 
     @media (min-width: 992px) {
