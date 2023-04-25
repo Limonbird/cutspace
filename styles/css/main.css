@@ -181,6 +181,9 @@ picture {
   align-items: center;
   display: flex;
 }
+.logo:hover {
+  color: inherit;
+}
 .logo__title {
   font-size: 24px;
   font-weight: bold;
@@ -364,59 +367,44 @@ picture {
   }
 }
 
-.page__intro {
+.page__section {
   margin-bottom: 60px;
 }
 @media (min-width: 992px) {
-  .page__intro {
+  .page__section--intro {
     margin-bottom: 100px;
   }
 }
-.page__partners {
-  margin-bottom: 60px;
-}
 @media (min-width: 992px) {
-  .page__partners {
+  .page__section--partners {
     margin-bottom: 91px;
   }
 }
-.page__provide {
-  margin-bottom: 60px;
-}
 @media (min-width: 992px) {
-  .page__provide {
+  .page__section--provide {
     margin-bottom: 154px;
   }
 }
-.page__using {
-  margin-bottom: 60px;
-}
 @media (min-width: 992px) {
-  .page__using {
+  .page__section--using {
     margin-bottom: 144px;
   }
 }
-.page__serve {
+.page__section--serve {
   margin-bottom: 90px;
 }
 @media (min-width: 992px) {
-  .page__serve {
+  .page__section--serve {
     margin-bottom: 113px;
   }
 }
-.page__choose {
-  margin-bottom: 60px;
-}
 @media (min-width: 992px) {
-  .page__choose {
+  .page__section--choose {
     margin-bottom: 110px;
   }
 }
-.page__words {
-  margin-bottom: 60px;
-}
 @media (min-width: 992px) {
-  .page__words {
+  .page__section--words {
     margin-bottom: -3px;
   }
 }

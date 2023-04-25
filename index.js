@@ -1,3 +1,7 @@
+const siteBody = document.querySelector('.site');
+const siteHeader = document.querySelector('.header');
+const menuButton = document.querySelector('.header__burger');
+
 // добавить класс active на форму
 const introForm = document.querySelector('.intro-form');
 const introFormInput = introForm.querySelector('.intro-form__input');
@@ -18,9 +22,6 @@ introElementList.forEach((item) => {
 // end
 
 // открыть | закрыть бургер меню в мобайле
-const siteBody = document.querySelector('.site');
-const menuButton = document.querySelector('.header__burger');
-
 menuButton.addEventListener('click', () => {
   siteBody.classList.toggle('site--menu-opened');
 });
@@ -84,8 +85,6 @@ const removeFooterStyles = () => {
 // end
 
 // показывать кнопку бургер меню поверх конента, если отскроллили вниз
-const siteHeader = document.querySelector('.header');
-
 const removeBurgerOntop = () => {
   menuButton.classList.remove('header__burger--ontop');
 };
@@ -99,10 +98,32 @@ const highlightBurger = () => {
 };
 
 const burgerObserver = new IntersectionObserver(highlightBurger, {
-  threshold: [1],
+  threshold: 1,
 });
 
 burgerObserver.observe(siteHeader);
+// end
+
+// перекидывать класс --active в меню при прокрутке страницы
+const updateActive = (entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+      const currentSectionId = entry.target.getAttribute('id');
+
+      if (currentSectionId) {
+        siteHeader.querySelector('.header__link--active').classList.remove('header__link--active');
+        siteHeader.querySelector(`[href="#${currentSectionId}"]`).classList.add('header__link--active');
+      }
+    }
+  });
+};
+
+const anchorObserver = new IntersectionObserver(updateActive, {
+  threshold: 0.5,
+});
+
+const pageSectionAll = document.querySelectorAll('.page__section');
+pageSectionAll.forEach((section) => anchorObserver.observe(section));
 // end
 
 /*
