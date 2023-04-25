@@ -1,9 +1,9 @@
 const siteBody = document.querySelector('.site');
 const siteHeader = document.querySelector('.header');
 const menuButton = document.querySelector('.header__burger');
+const introForm = document.querySelector('.intro-form');
 
 // добавить класс active на форму
-const introForm = document.querySelector('.intro-form');
 const introFormInput = introForm.querySelector('.intro-form__input');
 const introFormButton = introForm.querySelector('.intro-form__button');
 const introElementList = [introFormInput, introFormButton];
@@ -19,6 +19,14 @@ introElementList.forEach((item) => {
     introForm.classList.remove('intro-form--active');
   });
 });
+// end
+
+// вывести сообщение-заглушку при отправке формы
+introForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  alert('Заглушка для отправки формы');
+  introForm.reset();
+})
 // end
 
 // открыть | закрыть бургер меню в мобайле
