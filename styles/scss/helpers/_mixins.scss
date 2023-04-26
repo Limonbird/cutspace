@@ -17,3 +17,9 @@
   justify-content: center;
   width: $size;
 }
+
+@mixin anchor-margin($height: 110px) {
+  padding-top: $height;
+  margin-top: $height * -1;
+  background-clip: content-box;
+}

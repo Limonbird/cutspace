@@ -4,22 +4,17 @@
   &__icon {
     @include bg-circle(70px);
     margin: 0 auto 15px;
-    transition: $base-duration ease;
-
-    .choose-item:hover & {
-      background-color: $orange;
-    }
   }
 
   &__svg {
     fill: $aqua;
-
-    .choose-item:hover & {
-      fill: $white;
-    }
   }
 
   &__title {
     margin-bottom: 2px;
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      font-size: 24px;
+    }
   }
 }

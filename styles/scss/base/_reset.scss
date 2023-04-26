@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $black;
   font-family: 'Poppins', sans-serif;
@@ -12,7 +17,7 @@ body {
   letter-spacing: 1.15px;
   line-height: 1.69;
   margin: 0;
-  min-width: 1440px; // @TODO: заменить, когда будет готов адаптив
+  min-width: 320px;
 }
 
 h1,
@@ -28,13 +33,21 @@ h6 {
 }
 
 h1 {
-  font-size: 54px;
+  font-size: 42px;
   line-height: 1.46;
+
+  @media (min-width: 576px) {
+    font-size: 54px;
+  }
 }
 
 h2,
 h3 {
-  font-size: 42px;
+  font-size: 36px;
+
+  @media (min-width: 576px) {
+    font-size: 42px;
+  }
 }
 
 h4 {
@@ -88,4 +101,8 @@ figure {
 img,
 svg {
   vertical-align: middle;
+}
+
+picture {
+  display: block;
 }
