@@ -4,7 +4,7 @@
   }
 
   &__body {
-    background: url('../../assets/images/bg/circle-group.svg') no-repeat top right, $aqua;
+    background: url('./assets/images/bg/circle-group.svg') no-repeat top right, $aqua;
     background-size: 175px auto;
     border-radius: 20px;
     overflow: hidden;
@@ -16,8 +16,8 @@
     }
 
     @media (min-width: 992px) {
-      background: url('../../assets/images/bg/circle-group.svg') no-repeat top right,
-        url('../../assets/images/bg/quarter.svg') no-repeat 46% 100%, $aqua;
+      background: url('./assets/images/bg/circle-group.svg') no-repeat top right,
+        url('./assets/images/bg/quarter.svg') no-repeat 46% 100%, $aqua;
       background-size: 225px auto, 304px auto;
       padding: 91px 95px;
     }

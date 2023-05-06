@@ -59,7 +59,7 @@
 
     &::before {
       @media (min-width: 992px) {
-        background: url('../../assets/images/bg/semicircle.svg') no-repeat;
+        background: url('./assets/images/bg/semicircle.svg') no-repeat;
         bottom: 0;
         content: '';
         height: 372px;
