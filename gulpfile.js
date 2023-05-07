@@ -11,11 +11,11 @@ const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass')(require('sass'));
 const terser = require('gulp-terser');
 
-const isDev = () => !argv.prod;
+// const isDev = () => !argv.prod;
 const isProd = () => !!argv.prod;
 
-const cleanTask = () => {
-  return src('dist', { read: false }).pipe(clean({ force: true }));
+const cleanDist = () => {
+  return src('dist', { read: false, allowEmpty: true }).pipe(clean({ force: true }));
 };
 
 const buildHtml = () => {
@@ -81,6 +81,6 @@ const watchTask = () => {
 };
 
 exports.default = series(mainTasks, watchTask);
-exports.build = series(cleanTask, mainTasks);
+exports.build = series(cleanDist, mainTasks);
 
-exports.clean = cleanTask;
+exports.clean = cleanDist;
