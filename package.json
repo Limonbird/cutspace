@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "build": "gulp build --prod",
+    "build": "gulp build",
     "deploy": "gh-pages -d dist"
   },
   "author": "",
@@ -23,8 +23,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "gulp-terser": "^2.1.0",
-    "sass": "^1.62.1",
-    "yargs": "^17.7.1"
+    "sass": "^1.62.1"
   },
   "browserslist": [
     "last 2 versions",

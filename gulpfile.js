@@ -1,5 +1,4 @@
 const { src, dest, watch, series, parallel } = require('gulp');
-const argv = require('yargs').argv;
 const autoprefixer = require('gulp-autoprefixer'); // настройка browserslist находится в pagkage.json
 const clean = require('gulp-clean');
 const concat = require('gulp-concat');
@@ -11,8 +10,12 @@ const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass')(require('sass'));
 const terser = require('gulp-terser');
 
-// const isDev = () => !argv.prod;
-const isProd = () => !!argv.prod;
+let isProd = false;
+
+const toProd = (done) => {
+  isProd = true;
+  done();
+};
 
 const cleanDist = () => {
   return src('dist', { read: false, allowEmpty: true }).pipe(clean({ force: true }));
@@ -22,7 +25,7 @@ const buildHtml = () => {
   return src('src/index.html')
     .pipe(
       gulpif(
-        isProd(),
+        isProd,
         htmlmin({
           collapseWhitespace: true,
           removeComments: true,
@@ -35,9 +38,9 @@ const buildHtml = () => {
 const buildStyles = () => {
   return src('src/scss/main.scss')
     .pipe(sass())
-    .pipe(gulpif(isProd(), autoprefixer()))
-    .pipe(gulpif(isProd(), gcmq()))
-    .pipe(gulpif(isProd(), csso()))
+    .pipe(gulpif(isProd, autoprefixer()))
+    .pipe(gulpif(isProd, gcmq()))
+    .pipe(gulpif(isProd, csso()))
     .pipe(concat('style.css'))
     .pipe(dest('dist'));
 };
@@ -46,7 +49,7 @@ const buildScripts = () => {
   return src('src/index.js')
     .pipe(
       gulpif(
-        isProd(),
+        isProd,
         terser({
           toplevel: true,
         })
@@ -60,7 +63,7 @@ const buildImages = () => {
   return src(['src/assets/favicons/*', 'src/assets/images/**/*'], {
     base: 'src/assets',
   })
-    .pipe(gulpif(isProd(), imagemin([imagemin.mozjpeg({ quality: 95 })])))
+    .pipe(gulpif(isProd, imagemin([imagemin.mozjpeg({ quality: 95 })])))
     .pipe(dest('dist/assets'));
 };
 
@@ -81,6 +84,6 @@ const watchTask = () => {
 };
 
 exports.default = series(mainTasks, watchTask);
-exports.build = series(cleanDist, mainTasks);
+exports.build = series(toProd, cleanDist, mainTasks);
 
 exports.clean = cleanDist;
