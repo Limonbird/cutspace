@@ -26,7 +26,7 @@ introForm.addEventListener('submit', (event) => {
   event.preventDefault();
   alert('Заглушка для отправки формы');
   introForm.reset();
-})
+});
 // end
 
 // открыть | закрыть бургер меню в мобайле
@@ -40,7 +40,7 @@ menuButton.addEventListener('click', () => {
   - выделить активный пункт меню
   - закрыть бургер-меню (в мобайле)
 */
-const headerLinkAll = document.querySelectorAll('.header__link');
+const headerLinkAll = document.querySelectorAll('.header-nav__link');
 
 const closeMenu = () => {
   siteBody.classList.remove('site--menu-opened');
@@ -49,10 +49,10 @@ const closeMenu = () => {
 headerLinkAll.forEach((item) => {
   item.addEventListener('click', () => {
     headerLinkAll.forEach((item) => {
-      item.classList.remove('header__link--active');
+      item.classList.remove('header-nav__link--active');
     });
 
-    item.classList.add('header__link--active');
+    item.classList.add('header-nav__link--active');
 
     if (window.innerWidth < 768) {
       closeMenu();
@@ -119,8 +119,8 @@ const updateActive = (entries) => {
       const currentSectionId = entry.target.getAttribute('id');
 
       if (currentSectionId) {
-        siteHeader.querySelector('.header__link--active').classList.remove('header__link--active');
-        siteHeader.querySelector(`[href="#${currentSectionId}"]`).classList.add('header__link--active');
+        siteHeader.querySelector('.header-nav__link--active').classList.remove('header-nav__link--active');
+        siteHeader.querySelector(`[href="#${currentSectionId}"]`).classList.add('header-nav__link--active');
       }
     }
   });

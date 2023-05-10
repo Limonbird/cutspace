@@ -1,0 +1,64 @@
+.header-nav {
+  display: none;
+
+  @media (max-width: 767.98px) {
+    .site--menu-opened & {
+      align-items: center;
+      background-color: $white;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      padding: 60px 30px;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 100;
+    }
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  &__list {
+    @include list-unstyled;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 25px;
+    }
+
+    @media (min-width: 992px) {
+      gap: 42px;
+    }
+  }
+
+  &__item {
+    & + & {
+      @media (max-width: 767.98px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &--active {
+      color: $orange;
+      transform: scale(1.05);
+    }
+
+    @media (min-width: 768px) {
+      text-align: initial;
+      font-size: initial;
+    }
+  }
+}
